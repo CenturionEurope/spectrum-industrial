@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/* LESS Controller */
+Route::get('/Resources/LESS', ['uses' =>'Spectrum\ResourceController@Less']);
