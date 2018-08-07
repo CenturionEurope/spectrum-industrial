@@ -13,11 +13,9 @@
             </li> 
             <li class="nav-item">
                 <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-google-plus-g"></i></a>            
-            </li>    
-            
+            </li>                
         </ul>
     </div>
-
     <!-- Tab panes -->
     <div class="tab-content">
         <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>

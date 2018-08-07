@@ -1,22 +1,26 @@
-/* Styling for Spectrum Industrial Website */
+/* Spectrum Industrial Website */
 
 /* Global Settings */
 
 body{
     background-color: @spectrum_black;
     color: @spectrum_white;
+    font-family: 'Montserrat', sans-serif;
 }
-
 
 /* Navigation */
 div.header{
     background-color: @spectrum_grey;
     width: 100%;
+    div.advert{
+        margin-top: 30px;
+    }
 }
 nav{
     &.bg-dark-spectrum-topnav{
         background-color: @spectrum_black;
         color: @spectrum_white;
+        font-family: 'Montserrat', sans-serif;
         ul{
             &.nav{
                &.light{
@@ -44,6 +48,7 @@ nav{
         border-bottom: 5px solid @spectrum_red;
         padding-top: 20px;
         padding-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
         ul{
             &.nav{
                &.light{
@@ -85,3 +90,19 @@ img{
     }
 }
 
+/* content areas */
+
+div.content-area{
+    margin-top: 35px;
+    div.catsheader{
+        background-color: @spectrum_red;
+        color: @spectrum_white;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        text-align: center;
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+    }
+}
