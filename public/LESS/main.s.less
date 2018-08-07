@@ -9,9 +9,12 @@ body{
 
 
 /* Navigation */
-
+div.header{
+    background-color: @spectrum_grey;
+    width: 100%;
+}
 nav{
-    &.bg-dark-spectrum{
+    &.bg-dark-spectrum-topnav{
         background-color: @spectrum_black;
         color: @spectrum_white;
         ul{
@@ -33,4 +36,47 @@ nav{
             }
         }
     }
+    &.bg-dark-spectrum-mainnav{
+        background-color: @spectrum_black;
+        color: @spectrum_white;
+        border-bottom: 5px solid @spectrum_red;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        ul{
+            &.nav{
+               &.light{
+                    a{
+                        color: @spectrum_white;
+                        &:hover{
+                            color: @spectrum_red;
+                        }
+                    }
+               }
+            }
+        }        
+    }
 }
+div.branding{
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    background-color: @spectrum_grey;
+    overflow: hidden;
+    width: 100%;
+    img{
+        &.logo{
+            margin-top: 20px;
+        }
+    }
+}
+
+/* Slider */
+
+div.carousel-inner{    
+    height: 500px;
+}
+img{
+    &.slide{
+        width: 100%;       
+    }
+}
+
