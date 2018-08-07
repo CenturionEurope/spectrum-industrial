@@ -1,12 +1,31 @@
 /* Styling for Spectrum Industrial Website */
+
+/* Global Settings */
+
 body{
     background-color: @spectrum_black;
     color: @spectrum_white;
 }
 
+
+/* Navigation */
+
 nav{
     &.bg-dark-spectrum{
         background-color: @spectrum_black;
+        color: @spectrum_white;
+        ul{
+            &.nav{
+               &.light{
+                    a{
+                        color: @spectrum_white;
+                        &:hover{
+                            color: @spectrum_red;
+                        }
+                    }
+               }
+            }
+        }
         i{
             color: @spectrum_white;
             &:hover{
