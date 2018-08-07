@@ -13,15 +13,9 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#tab4Id">Action</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a href="#tab5Id" class="nav-link">Another link</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link disabled">Disabled</a>
-            </li>
+            </li>           
         </ul>
-    
+           
         <!-- Tab panes -->
         <div class="tab-content">
             <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
