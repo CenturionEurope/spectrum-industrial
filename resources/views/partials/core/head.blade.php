@@ -16,9 +16,9 @@
     <meta name='og:site_name' content='Website Title'/>
     <meta name='og:description' content='Copy Meta Description'/>
     <!-- Favicons -->
-    <link rel='icon' type='image/x-icon' href='http://example.com/favicon.ico' />
-    <link rel='icon' type='image/png' href='http://example.com/favicon.gif' />
-    <link rel='icon' type='image/gif' href='http://example.com/favicon.png' />
+    <link rel='icon' type='image/x-icon' href='/images/spectrum.ico' />
+    <link rel='icon' type='image/png' href='/images/spectrum.png' />
+    <link rel='icon' type='image/gif' href='/images/spectrum.gif' />
     <!-- Progressive Web App -->
     <link rel='manifest' href='/manifest.json'>    
     
