@@ -7,22 +7,34 @@
     </div>
     @include('partials.elements.main-slider')
     <div class="container">
-        <div class="row content-area">
+        <div class="row content-area">            
             <div class="col-lg-3">
-                <div class="catsheader">
-                    <p>Browse Categories</p>
+                <div class="categorybox">
+                    <div class="catboxheader">
+                        <h5>Category Name</h5>
+                    </div>                    
                 </div>
-                <div class="catslist">
-                    <ul>
-                        <li>Category Name</li>
-                        <li>Category Name</li>
-                        <li>Category Name</li>
-                        <li>Category Name</li>
-                    </ul>
+            </div>            
+            <div class="col-lg-3">
+                <div class="categorybox">
+                    <div class="catboxheader">
+                        <h5>Category Name</h5>
+                    </div>   
                 </div>
             </div>
-            <div class="col-lg-9">
-
+            <div class="col-lg-3">
+                <div class="categorybox">
+                    <div class="catboxheader">
+                        <h5>Category Name</h5>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="categorybox">
+                    <div class="catboxheader">
+                        <h5>Category Name</h5>
+                    </div> 
+                </div>
             </div>
         </div>   
     </div>

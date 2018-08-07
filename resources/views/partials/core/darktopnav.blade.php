@@ -1,20 +1,28 @@
 <nav class="bg-dark-spectrum-topnav">
     <div class="container">
-        <!-- Nav tabs -->
-        <ul class="nav light" id="navId">        
-            <li class="nav-item">
-                <a class="nav-link facebook" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-facebook-f"></i></a>            
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-twitter"></i></a>            
-            </li> 
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-youtube"></i></a>            
-            </li> 
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-google-plus-g"></i></a>            
-            </li>                
-        </ul>
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- Nav tabs -->
+                <ul class="nav light" id="navId">        
+                    <li class="nav-item">
+                        <a class="nav-link facebook" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-facebook-f"></i></a>            
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-twitter"></i></a>            
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-youtube"></i></a>            
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-google-plus-g"></i></a>            
+                    </li>                
+                </ul>
+            </div>
+            <div class="col-lg-6 topnav-right">
+                <p><i class="fas fa-phone"></i> 01302 800273</p>
+            </div>
+        </div>
+        
     </div>
     <!-- Tab panes -->
     <div class="tab-content">

@@ -10,7 +10,7 @@ body{
 
 /* Navigation */
 div.header{
-    background-color: @spectrum_grey;
+    background-color: @spectrum_white;
     width: 100%;
     div.advert{
         margin-top: 30px;
@@ -18,9 +18,14 @@ div.header{
 }
 nav{
     &.bg-dark-spectrum-topnav{
-        background-color: @spectrum_black;
+        background-color: @spectrum_grey;
         color: @spectrum_white;
         font-family: 'Montserrat', sans-serif;
+        div.topnav-right{
+            text-align: right;
+            margin-top: 10px;
+            font-size: 14px;
+        }
         ul{
             &.nav{
                &.light{
@@ -74,7 +79,7 @@ nav{
 div.branding{
     padding-top: 30px;
     padding-bottom: 30px; 
-    background-color: @spectrum_grey;
+    background-color: @spectrum_white;
     overflow: hidden;
     width: 100%;    
 }
@@ -104,19 +109,17 @@ div.content-area{
         p{
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
+            font-size: 14px;
         }
-    }
-    div.catslist{
-        background-color: @spectrum_lightgrey;
-        color: @spectrum_grey;
-        ul{
-            padding: 0px;
-            li{
-                list-style: none;
-                border-bottom: 2px solid @spectrum_red;
-                padding: 10px;
-                border-width: 100%
-            }
+    }    
+    div.categorybox{
+        background-color: @spectrum_grey;
+        border-left: 3px solid @spectrum_red;
+        div.catboxheader{
+            background-color: @spectrum_black;
+            color: white;
+            padding: 10px;
+
         }
     }
 }
