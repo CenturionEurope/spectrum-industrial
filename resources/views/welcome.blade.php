@@ -12,6 +12,14 @@
                 <div class="catsheader">
                     <p>Browse Categories</p>
                 </div>
+                <div class="catslist">
+                    <ul>
+                        <li>Category Name</li>
+                        <li>Category Name</li>
+                        <li>Category Name</li>
+                        <li>Category Name</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-lg-9">
 
