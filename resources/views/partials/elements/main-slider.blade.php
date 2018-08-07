@@ -1,10 +1,10 @@
 <div id="carouselId" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img src="/images/slides/slide-1.jpg" class="slide" alt="">
+            <img src="/images/scaffold-background.jpg" class="slide" alt="">
         </div>
         <div class="carousel-item slide">
-            <img src="/images/slides/slide-1.jpg" class="slide" alt="">
+            <img src="/images/scaffold-background.jpg" class="slide" alt="">
         </div>        
     </div>
     <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">

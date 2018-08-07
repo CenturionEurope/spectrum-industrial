@@ -38,6 +38,7 @@
             </div>
         </div>   
     </div>
+    @include('partials.core.footer')
 @include('partials.core.js')
 </body>
 </html>
