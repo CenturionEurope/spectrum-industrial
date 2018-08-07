@@ -53,6 +53,14 @@ nav{
                     }
                }
             }
+        a.nav-link{
+            color: @spectrum_white;
+            transition: all 0.5s;
+            &:hover{
+                color: @spectrum_red;
+                transition: all 0.5s;
+            }
+        }
         }        
     }
 }
@@ -61,12 +69,7 @@ div.branding{
     padding-bottom: 30px; 
     background-color: @spectrum_grey;
     overflow: hidden;
-    width: 100%;
-    img{
-        &.logo{
-            margin-top: 20px;
-        }
-    }
+    width: 100%;    
 }
 
 /* Slider */
