@@ -1,0 +1,146 @@
+# Spectrum Industrial Category Tree
+
+All categories for Spectrum below:
+
+- Safety Signs
+- - Custom Signs
+  - Fire Safety Signs & Safe Condition Signs
+  - - Fire Exit and Evacuation Signs
+    - Safety Instruction Signs
+    - Refuge Fire Exit Signs
+    - Double Sided Hanging Signs
+    - Fire Assembly Signs
+    - Safe Condition Signs
+    - First Aid & Treatment
+    - Eye Wash Station
+  - Photoluminescent Signs
+  - - Fire Exit and Evacuation Signs
+    - Safe Condition Signs
+    - Tapes & Floor Markings
+    - Mandatory Signs
+    - Safety Light Sticks
+    - Fire Safe Condition
+    - IMO (International Maritime Organization) Signs
+  - Fire Extinguishers, Fire Equipment and Fire Signs
+  - - Fire Extinguisher Signs
+    - Armbands and Lanyards
+    - Fire Extinguishers
+    - Fire Extinguisher stands
+    - Fire Blankets
+    - Fire Safety Signs
+    - Fire Alarms
+    - Fire Alarm Signs
+    - Fire Equipment Signs
+    - Projection Signs
+  - No Smoking and Prohibition Signs
+  - - Smoking Prohibition Signs
+    - Smoking Permitted Signs
+    - Electronic Cigarette Signs
+    - Desk Signs
+    - Restricted Access Signs
+    - Machine Safety Signs
+    - Mobile Phone Signs
+    - Pre-Cut Circles
+  - Mandatory Signs
+  - - PPE Signs
+    - Fire action and First aid procedure signs
+    - Fire Door and Access Signs
+    - Fire Door Strips
+    - Safe Practice and Procedure Signs
+    - Hygiene & Food Preparation Signs
+  - Hazard Warning Signs
+  - - Lorry Halt
+    - Electrical Safety Signs
+    - Chemical Safety Signs
+    - Flammable and Gaseous Signs
+    - CCTV Security Signs
+    - Access & Situational Awareness Signs
+    - Temperature Signs
+    - Asbestos Signs
+    - Hospital & Radiology Signs
+    - Noise Signs
+    - Cleaning Signs
+    - Parking Signs
+    - Agriculture Signs
+    - Multi-Message Signs
+  - Construction and General Signs
+  - - Site Safety
+    - - Site Safety Composites
+      - Build your own safety notice
+      - Safety report books
+      - site safety packs
+    - Health & safety signs
+    - - Fire extinguisher and equipment
+      - Fire Safety and Safe Condition
+      - Prohibition
+      - Mandatory
+      - Hazard Warning
+    - General
+    - - Construction & General
+      - Site Signs
+      - Speed Control
+      - Highway / Motorway Maintenance
+      - Construction Access
+    - Quarry Signs
+    - Safety Banners
+    - Road and Traffic Signs
+    - - CE Marked Permanent Road Signs
+      - Permanent Road Signs (Class 2)
+      - Supplementary Road Signs
+      - Permanent Road Signs
+      - Public Notices
+      - Road Posts and Caps
+      - Post Clips and Fixings
+      - Lollipop and Banksman Paddles
+      - Misc Road Sign Fixings
+      - Acrylic Linemarker
+      - Stencils
+      - Temporary Road Signs (Class 1)
+      - Supplementary Plates
+      - Q-Signs (Plastic)
+      - Roll-Up Signs
+      - Non-reflective Road Signs
+      - Road Sign Frames (Stanchions)
+      - Highway / Motorway Maintenance
+      - Safety Mirrors
+      - MOT Signs
+    - Mini and Architectural Signs
+    - - Health & Safety Signs
+      - - Mandatory
+        - Prohibition
+        - Red Safe Condition
+        - Hazard Warning
+        - Fire Exit & Safe Condition
+      - Metallic Effect
+      - - Stainless Steel
+        - Polished Gold
+        - Chrome Effect
+        - Black on Polished Gold
+        - Black on Chrome Effect
+      - Metal Architectural Signs
+      - - Finger Plates
+        - Door Sign Discs
+        - Door Sign Plates
+      - Taktyle Braille Signs
+      - - Introduction 
+        - - Fire Exit and Safe Condition Signs
+          - Fire Extinguisher and equipment signs
+          - Prohibition Signs
+          - Mandatory Signs
+          - Hazard Warning Signs
+        - General
+        - Taktyle Photoluminescent
+        - - Green Safe Condition Signs
+          - Fire Safety Signs
+          - Mandatory Signs
+          - Taktyle Finger Plates
+          - Finger Plates
+- Safety Posters, Literature and POS
+- - Report Books
+  - Permit to work forms
+  - Wall holders
+  - PPE Safety Mirror
+  - Rigid Safety Posters
+  - Hygiene Safety Posters
+  - Workplace and General safety posters
+  - Health and safety posters (HSE)

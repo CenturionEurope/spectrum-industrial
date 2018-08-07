@@ -19,6 +19,7 @@
     <link rel='icon' type='image/x-icon' href='/images/spectrum.ico' />
     <link rel='icon' type='image/png' href='/images/spectrum.png' />
     <link rel='icon' type='image/gif' href='/images/spectrum.gif' />
+    
     <!-- Progressive Web App -->
     <link rel='manifest' href='/manifest.json'>    
     
