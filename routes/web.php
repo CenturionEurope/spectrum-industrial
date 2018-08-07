@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 /* LESS Controller */
 Route::get('/Resources/LESS', ['uses' =>'Spectrum\ResourceController@Less']);
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
