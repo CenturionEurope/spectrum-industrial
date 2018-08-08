@@ -179,11 +179,7 @@ div.featureimage{
 div.newsdata{
     margin-top: 35px;
 }
-div.sidebar{
-    background-color: @spectrum_sidebargrey;
-    color: @spectrum_grey;
-    padding: 10px;
-}
+
 div.tags{
     font-size: 12px;
 }
@@ -195,20 +191,54 @@ div.post{
         }
     }
 }
+
+
+/* Sidebar */
+
+div.sidebar{
+    background-color: @spectrum_sidebargrey;
+    color: @spectrum_grey;
+}
+
+/* Sidebar Widgets */
+
+hr.sidebar{
+    border-bottom: 2px solid @spectrum_red;
+}
+
+/* Recent News Widget */
+div.newsheader-sidebar{
+    padding: 10px;
+}
 ul.recentnews{
-    margin-left: -35px;
-    li.newsitem{
-        margin: 0;
+    li.newsitem{       
         list-style: none;
         font-size: 12px;
+        margin-left: -25px;
         a{
             color: @spectrum_grey;
+            font-weight: 800;
             &:hover{
                 color: @spectrum_red;
             }
         }
     }
 }
-hr.sidebar{
-    border-bottom: 2px solid @spectrum_red;
+
+/* Contact Widget */
+div.contactdata{
+    background-color: @spectrum_red;
+    color: @spectrum_white;
+    padding: 10px;    
+    h4{
+        font-weight: 800;
+    }
+    a{
+        color: @spectrum_white;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover{
+            color: @spectrum_grey;
+        }
+    }
 }
