@@ -11,13 +11,24 @@
 |
 */
 
+// This pulls all of the posts and passes them into the view //
 Route::get('/', function () {
-    return view('welcome');
+    $posts = App\Post::all();
+    return view('welcome', compact('posts'));
 });
 
-/* LESS Controller */
+// Single Posts from the News Section //
+Route::get('post/{slug}', function($slug){
+	$post = App\Post::where('slug', '=', $slug)->firstOrFail();
+	return view('post', compact('post'));
+});
+
+// Custom Routes Below this Point //
+
+// LESS Controller //
 Route::get('/Resources/LESS', ['uses' =>'Spectrum\ResourceController@Less']);
 
+// Voyager Admin //
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
