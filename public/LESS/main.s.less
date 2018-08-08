@@ -222,6 +222,9 @@ ul.recentnews{
                 color: @spectrum_red;
             }
         }
+        i.user{
+            padding-left: 10px;
+        }
     }
 }
 
@@ -230,6 +233,7 @@ div.contactdata{
     background-color: @spectrum_red;
     color: @spectrum_white;
     padding: 10px;    
+   position: relative;
     h4{
         font-weight: 800;
     }
@@ -241,4 +245,19 @@ div.contactdata{
             color: @spectrum_grey;
         }
     }
+    hr.contact{
+        border-bottom: 2px solid @spectrum_white;
+    }
+    :after {
+        position:absolute;
+        content: " ";
+        display:block;
+        left:0;
+        bottom:-20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 0 250px 20px 0;
+        border-color: transparent #e30613 transparent transparent;
+      }
+    
 }

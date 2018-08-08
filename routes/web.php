@@ -11,11 +11,14 @@
 |
 */
 
-// This pulls all of the posts and passes them into the view //
+// General Pages //
 Route::get('/', function () {
     $posts = App\Post::all();
     return view('welcome', compact('posts'));
 });
+
+// Templating Pages //
+
 
 // Single Posts from the News Section //
 Route::get('post/{slug}', function($slug){
