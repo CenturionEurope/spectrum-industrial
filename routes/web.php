@@ -27,7 +27,7 @@ Route::get('post/{slug}', function($slug){
 // Custom Routes Below this Point //
 
 // LESS Controller //
-Route::get('/Resources/LESS', ['uses' =>'Spectrum\ResourceController@Less']);
+Route::get('/Resources/LESS', ['uses' =>'Spectrum\LessController@Less']);
 
 // Voyager Admin //
 Route::group(['prefix' => 'admin'], function () {

@@ -6,7 +6,7 @@ use Less_Parser;
 use Less_Cache;
 
 
-class ResourceController extends Controller
+class LessController extends Controller
 {
 	
 	public function minify_css($input) {
@@ -54,14 +54,14 @@ class ResourceController extends Controller
 
        	$parser = new Less_Parser();
         $parser->parseFile('LESS/Build.less');
-        $css = app('App\Http\Controllers\Spectrum\ResourceController')->minify_css($parser->getCss());
+        $css = app('App\Http\Controllers\Spectrum\LessController')->minify_css($parser->getCss());
 
 		$less_files = array( base_path().'/public/LESS/Build.less' =>  base_path().'/public/LESS');
 
 		$options = ['cache_dir' => storage_path() . '/app'];
 		$css_file_name = Less_Cache::Get( $less_files, $options );
         $compiled = file_get_contents( storage_path() . '/app/' . $css_file_name );
-        $compiled = app('App\Http\Controllers\Spectrum\ResourceController')->minify_css($compiled);
+        $compiled = app('App\Http\Controllers\Spectrum\LessController')->minify_css($compiled);
         return response($compiled, 200)->header('Content-Type', 'text/css');
 
     }
