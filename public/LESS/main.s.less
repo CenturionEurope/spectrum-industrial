@@ -180,8 +180,9 @@ div.newsdata{
     margin-top: 35px;
 }
 div.sidebar{
-    background-color: @spectrum_grey;
-    color: @spectrum_white;
+    background-color: @spectrum_sidebargrey;
+    color: @spectrum_grey;
+    padding: 10px;
 }
 div.tags{
     font-size: 12px;
@@ -193,4 +194,21 @@ div.post{
             color: @spectrum_grey;
         }
     }
+}
+ul.recentnews{
+    margin-left: -35px;
+    li.newsitem{
+        margin: 0;
+        list-style: none;
+        font-size: 12px;
+        a{
+            color: @spectrum_grey;
+            &:hover{
+                color: @spectrum_red;
+            }
+        }
+    }
+}
+hr.sidebar{
+    border-bottom: 2px solid @spectrum_red;
 }

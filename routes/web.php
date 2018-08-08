@@ -19,8 +19,9 @@ Route::get('/', function () {
 
 // Single Posts from the News Section //
 Route::get('post/{slug}', function($slug){
-	$post = App\Post::where('slug', '=', $slug)->firstOrFail();
-	return view('post', compact('post'));
+    $post = App\Post::where('slug', '=', $slug)->firstOrFail();
+    $posts = App\Post::all();
+	return view('post', compact('post','posts'));
 });
 
 // Custom Routes Below this Point //

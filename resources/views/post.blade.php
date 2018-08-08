@@ -26,13 +26,11 @@
             </div>
             <div class="col-lg-3">
                 <div class="sidebar">
-
+                    @include('sidebar.widgets.recent-posts')                    
                 </div>
             </div>
         </div>
     </div>
-    <!-- Tags & Categories -->
-
     <!-- Related Posts -->    
     
     @include('partials.core.footer')
