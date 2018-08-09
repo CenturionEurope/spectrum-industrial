@@ -1,9 +1,11 @@
+// Choose what files to cache and set the cache name
 var dataCacheName = 'Spectrum-v1';
 var cacheName = 'Spectrum_v1';
 var filesToCache = [
  '/', 
 ];
 
+// Install the service worker
 self.addEventListener('install', function(e) {
  console.log('[ServiceWorker] Install');
  e.waitUntil(
@@ -13,6 +15,8 @@ self.addEventListener('install', function(e) {
    })
  );
 });
+
+// Activate the service worker
 self.addEventListener('activate', function(e) {
  console.log('[ServiceWorker] Activate');
  e.waitUntil(   
@@ -27,6 +31,8 @@ self.addEventListener('activate', function(e) {
  );
  return self.clients.claim();
 });
+
+// Fetch all of the cached items
 self.addEventListener('fetch', function(e) {
  console.log('[ServiceWorker] Fetch', e.request.url);
  e.respondWith(
