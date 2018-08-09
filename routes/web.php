@@ -14,17 +14,23 @@
 // General Pages //
 Route::get('/', function () {
     $posts = App\Post::all();
-    return view('welcome', compact('posts'));
+    return view('pages.welcome', compact('posts'));
 });
 
 // Templating Pages //
-
 
 // Single Posts from the News Section //
 Route::get('post/{slug}', function($slug){
     $post = App\Post::where('slug', '=', $slug)->firstOrFail();
     $posts = App\Post::all();
-	return view('post', compact('post','posts'));
+	return view('pages.post', compact('post','posts'));
+});
+
+//Single Product
+Route::get('product/{slug}', function($slug){
+    $product = App\Product::where('slug', '=', $slug)->firstOrFail();    
+    $posts = App\Post::all();
+	return view('pages.product', compact('product','posts'));
 });
 
 // Custom Routes Below this Point //

@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>{{setting('site.title')}}</title>
+    <title>{{setting('site.title')}} - {{$product->ProductName}}</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <meta name='keywords' content='your, tags'/>
-    <meta name='description' content='150 Characters'/>
+    <meta name='keywords' content='{{ $product->Tags }}'/>
+    <meta name='description' content='{{ $product->ProductDesc }}'/>
     <meta name='copyright' content='{{setting('site.title')}}'>
     <meta name='author' content='Centurion'>
     <!-- Open Graph Tags -->
-    <meta name='og:title' content='{{setting('site.title')}}'/>
+    <meta name='og:title' content='{{setting('site.title')}} - {{$product->ProductName}}'/>
     <meta name='og:type' content='website'/>
-    <meta name='og:url' content=''/>
+    <meta name='og:url' content='{{ Voyager::image( $product->ProductImage ) }}'/>
     <meta name='og:image' content='/image/path'/>
-    <meta name='og:site_name' content='{{setting('site.title')}}'/>
-    <meta name='og:description' content='Copy Meta Description'/>
+    <meta name='og:site_name' content='{{setting('site.title')}} - {{$product->ProductName}}'/>
+    <meta name='og:description' content='{{ $product->ProductDesc }}'/>
     <!-- Favicons -->
     <link rel='icon' type='image/x-icon' href='/images/spectrum.ico' />
     <link rel='icon' type='image/png' href='/images/spectrum.png' />

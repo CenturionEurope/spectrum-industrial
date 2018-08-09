@@ -11,8 +11,6 @@ class ResourceController extends Controller
         /* Gather the information from the database table provided */
         $Materials = DB::table('materials')->get();
 
-        
-
         /* Return the data to the view */
         return view('welcome', ['materials' => $Materials]);
              
