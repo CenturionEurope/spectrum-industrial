@@ -4,16 +4,19 @@
         @include('partials.core.darktopnav')
         @include('partials.core.header')
         @include('partials.core.main-nav')
-    </div>  
-    <div class="featureimage">
-        <img src="{{ Voyager::image( $product->ProductImage ) }}" class="productimage" alt="{{$product->ProductName}}, {{$product->Category}}" >
-    </div>
+    </div>    
     <div class="container newsdata">
         <div class="row">
-            <div class="col-lg-12">
-                <h1>{{ $product->ProductName }}</h1>
+            <div class="col-lg-9">
+                <h1>{{ $product->ProductName }} <span class="productcode">({{$product->ProductCode}})</span></h1>
                 <hr>   
-            </div>            
+            </div>  
+            <div class="col-lg-3">
+                <div class="price">
+                    <h1>&pound;{{ $product->Price }}</h1>
+                </div>
+                <hr>   
+            </div>           
         </div>
         <div class="row">
             <div class="col-lg-9">
@@ -22,10 +25,15 @@
                         Category: {{$product->Category}}/{{$product->SubCategory}}
                     </h1>
                     <hr>
+                    <img src="{{ Voyager::image( $product->ProductImage ) }}" class="productimage" alt="{{$product->ProductName}}, {{$product->Category}}" >
                     {!! $product->ProductDesc !!}
                     <hr>
+                    <div class="product-table">
+                        
+                    <hr>
+                    </div>
                     <div class="tags">
-                        <h5 class="tags">Tags: <b><i>{{ $product->Tags }}</i></b></h5>                        
+                        <h5 class="tags"><b>Tags: <i>{{ $product->Tags }}</i></b></h5>                        
                     </div>
                 </div>               
             </div>
@@ -53,8 +61,7 @@
                 </div>
             </div>
         </div>
-    </div>   
-    
+    </div>       
     @include('partials.core.footer')
 @include('partials.core.js')
 </body>
