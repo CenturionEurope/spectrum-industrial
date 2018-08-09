@@ -26,6 +26,13 @@ Route::get('post/{slug}', function($slug){
 	return view('pages.post', compact('post','posts'));
 });
 
+// All Posts (News Page)
+Route::get('news', function($slug){
+    $posts = App\Post::all();        
+	return view('pages.news', compact('posts'));
+});
+
+
 //Single Product
 Route::get('product/{slug}', function($slug){
     $product = App\Product::where('slug', '=', $slug)->firstOrFail();    
@@ -33,7 +40,7 @@ Route::get('product/{slug}', function($slug){
 	return view('pages.product', compact('product','posts'));
 });
 
-// All Products
+// All Products (Primary Products Page)
 Route::get('products', function($slug){
     $products = App\Product::all();        
 	return view('pages.productrange', compact('products'));
