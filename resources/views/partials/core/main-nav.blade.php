@@ -1,54 +1,49 @@
-<div class="darkmenu">
-        <div class="menu-container">
-            <div class="menu">
-                <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services <i class="fas fa-caret-down"></i></a>
-                    <ul>
-                    <li><a href="#">School</a>
-                        <ul>
-                        <li><a href="#">Lidership</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Careers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Study</a>
-                        <ul>
-                        <li><a href="#">Undergraduate</a></li>
-                        <li><a href="#">Masters</a></li>
-                        <li><a href="#">International</a></li>
-                        <li><a href="#">Online</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Research</a>
-                        <ul>
-                        <li><a href="#">Undergraduate research</a></li>
-                        <li><a href="#">Masters research</a></li>
-                        <li><a href="#">Funding</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Something</a>
-                        <ul>
-                        <li><a href="#">Sub something</a></li>
-                        <li><a href="#">Sub something</a></li>
-                        <li><a href="#">Sub something</a></li>
-                        <li><a href="#">Sub something</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                </li> 
-                <li><a href="">Products <i class="fas fa-caret-down"></i></a></li>             
-                <li><a href="">About Us</a></li>     
-                <li><a href="">Become A Distributor</a></li>   
-                <li><a href="">Find A Stockist</a></li>
-                <li><a href="">Spectrum Industrial UAE</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Catalogues</a></li>   
-                <li><a href="">Mobile Training Unit</a></li>                        
-  
-                </ul>
+<nav class="bg-dark-spectrum-mainnav">
+    <div class="container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs|pills" id="navId">
+        <li class="nav-item">
+            <a href="/" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab2Id">Action</a>
+                <a class="dropdown-item" href="#tab3Id">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Action</a>
             </div>
-        </div>  
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab2Id">Action</a>
+                <a class="dropdown-item" href="#tab3Id">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Action</a>
+            </div>
+        </li>  
+        <li class="nav-item"><a href="/" class="nav-link"> About Us </a></li>
+        <li class="nav-item"><a href="/" class="nav-link">Become a Distributor</a></li>
+        <li class="nav-item"><a href="/" class="nav-link">Find a Stockist</a></li>
+        <li class="nav-item"><a href="/" class="nav-link">Spectrum Industrial UAE</a></li>
+        <li class="nav-item"><a href="/" class="nav-link">News</a></li>  
+        <li class="nav-item"><a href="/" class="nav-link">Catalogues</a></li>                        
+    </ul>
+       
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
     </div>
-</div>
+    </div>
+</nav>
+<script>
+    $('#navId a').click(e => {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>

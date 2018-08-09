@@ -262,9 +262,27 @@ div.contactdata{
 }
 
 /* Product pages */
-img.productimage{
+div.productimage{
     width: 100%;
+    border: 2px solid @spectrum_grey;
+    display: inline-block;
+    min-height: 200px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        &:hover{
+            -moz-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            overflow: hidden;
+        }
+    }
 
+}
+div.producttext{
+    width: 100%;    
+    display: inline-block;
+    min-height: 200px;    
 }
 
 h1.categories{
@@ -283,7 +301,7 @@ div.price{
     text-align: right;
 }
 div.product-table{
-    
+    // fill
 }
 
 /* Cookie Consent */

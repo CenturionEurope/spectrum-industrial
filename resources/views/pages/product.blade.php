@@ -17,7 +17,7 @@
                 </div>
                 <hr>   
             </div>           
-        </div>
+        </div>        
         <div class="row">
             <div class="col-lg-9">
                 <div class="post">
@@ -25,13 +25,20 @@
                         Category: {{$product->Category}}/{{$product->SubCategory}}
                     </h1>
                     <hr>
-                    <img src="{{ Voyager::image( $product->ProductImage ) }}" class="productimage" alt="{{$product->ProductName}}, {{$product->Category}}" >
-                    {!! $product->ProductDesc !!}
-                    <hr>
-                    <div class="product-table">
-                        
-                    <hr>
-                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="productimage">
+                                <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="producttext">
+                                    <h4>Product Description</h4>
+                                    {!! $product->ProductDesc !!}
+                                </div> 
+                        </div>
+                    </div>                                     
+                    <hr>                    
                     <div class="tags">
                         <h5 class="tags"><b>Tags: <i>{{ $product->Tags }}</i></b></h5>                        
                     </div>
