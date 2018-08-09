@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebd434b3e4fd2f4e3abaee8cb1ecbdf5",
+    "content-hash": "60a83b29955236665ba003e7366dc755",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -3545,6 +3545,34 @@
                 "environment"
             ],
             "time": "2018-07-29T20:33:41+00:00"
+        },
+        {
+            "name": "wordpress-import",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thedevdojo/wordpress-import.git",
+                "reference": "v1.0.3"
+            },
+            "require": {
+                "larapack/hooks": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "hook": {
+                    "providers": [
+                        "WordpressImport\\WordpressImportServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WordpressImport\\": "src/"
+                }
+            },
+            "notification-url": "https://larapack.io/downloads",
+            "description": "This hook will allow you to import your wordpress posts, pages, categories, and users from the WP XML export file.",
+            "time": "2018-08-07T00:08:42+00:00"
         }
     ],
     "packages-dev": [
