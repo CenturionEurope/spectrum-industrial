@@ -11,6 +11,13 @@
            <div class="col-lg-9">
                <h4>Latest News</h4>
                <hr>
+               @foreach($posts as $post)
+                <div class="news-article">
+                    <h3>{{ $post->title }}</h3>
+                    <p>{{$post->meta_description}}</p>
+                    <p><i class="far fa-clock"></i> {{ date('d M Y', strtotime($post->created_at)) }} <i class="far fa-user user"></i> {{$post->author_id}}</p>
+                </div>
+               @endforeach
 
            </div>
            <div class="col-lg-3">
