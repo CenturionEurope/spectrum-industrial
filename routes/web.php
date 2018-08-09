@@ -27,7 +27,7 @@ Route::get('post/{slug}', function($slug){
 });
 
 // All Posts (News Page)
-Route::get('news', function($slug){
+Route::get('news', function(){
     $posts = App\Post::all();        
 	return view('pages.news', compact('posts'));
 });
@@ -41,7 +41,7 @@ Route::get('product/{slug}', function($slug){
 });
 
 // All Products (Primary Products Page)
-Route::get('products', function($slug){
+Route::get('products', function(){
     $products = App\Product::all();        
 	return view('pages.productrange', compact('products'));
 });
