@@ -6,7 +6,7 @@
         @include('partials.core.main-nav')
     </div>  
     <div class="featureimage">
-        <img src="{{ Voyager::image( $product->ProductImage ) }}" class="productimage">
+        <img src="{{ Voyager::image( $product->ProductImage ) }}" class="productimage" alt="{{$product->ProductName}}, {{$product->Category}}" >
     </div>
     <div class="container newsdata">
         <div class="row">
@@ -18,14 +18,14 @@
         <div class="row">
             <div class="col-lg-9">
                 <div class="post">
-                    <p class="categories">
+                    <h1 class="categories">
                         Category: {{$product->Category}}/{{$product->SubCategory}}
-                    </p>
+                    </h1>
                     <hr>
                     {!! $product->ProductDesc !!}
                     <hr>
                     <div class="tags">
-                        Tags: {{ $product->Tags }}
+                        <h5 class="tags">Tags: <b><i>{{ $product->Tags }}</i></b></h5>                        
                     </div>
                 </div>               
             </div>

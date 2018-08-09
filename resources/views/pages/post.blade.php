@@ -1,4 +1,4 @@
-@include('partials.core.head')
+@include('partials.core.posts.posthead')
 <body>
     <div class="header">
         @include('partials.core.darktopnav')

@@ -264,5 +264,39 @@ div.contactdata{
 /* Product pages */
 img.productimage{
     width: 100%;
-    
+
+}
+
+h1.categories{
+    font-size: 14px;
+}
+
+h5.tags{
+    font-size: 12px;
+}
+
+/* Cookie Consent */
+.js-cookie-consent{
+    &.cookie-consent{
+        width: 100%;
+        background-color: @spectrum_red;
+        color: @spectrum_white;
+        text-align: center;
+        padding: 20px;        
+        button.js-cookie-consent-agree{
+            &.cookie-consent__agree{
+                border: 2px solid @spectrum_white;
+                margin: 5px;
+                background-color: @spectrum_black;
+                color: @spectrum_white;
+                padding: 5px;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: @spectrum_grey;
+                    padding: 5px;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
 }

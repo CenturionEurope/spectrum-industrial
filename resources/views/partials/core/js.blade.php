@@ -19,3 +19,6 @@
 </script>
 
 <!-- End Service Worker -->
+
+<!-- Cookie Consent -->
+@include('cookieConsent::index')

@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>{{setting('site.title')}} - {{$product->Category}} - {{$product->ProductName}} ({{$product->ProductCode}})</title>
+    <title>{{setting('site.title')}} - {{$post->title}}</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <meta name='keywords' content='{{ $product->Tags }}'/>
-    <meta name='description' content='{{ $product->ProductDesc }}'/>
+    <meta name='keywords' content='{{ $post->meta_keywords }}'/>
+    <meta name='description' content='{{$post->meta_description}}'/>
     <meta name='copyright' content='{{setting('company.company_name')}}'>
     <meta name='author' content='{{setting('company.company_name')}}'>
     <!-- Open Graph Tags -->
-    <meta name='og:title' content='{{setting('site.title')}} - {{$product->ProductName}} ({{$product->ProductCode}})'/>
+    <meta name='og:title' content='{{setting('site.title')}} - {{$post->title}}'/>
     <meta name='og:type' content='website'/>
     <meta name='og:url' content='/'/>
-    <meta name='og:image' content='{{ Voyager::image( $product->ProductImage ) }}'/>
-    <meta name='og:site_name' content='{{setting('site.title')}} - {{$product->ProductName}} ({{$product->ProductCode}})'/>
-    <meta name='og:description' content='{{ $product->ProductDesc }}'/>
+    <meta name='og:image' content='{{ Voyager::image( $post->image ) }}'/>
+    <meta name='og:site_name' content='{{setting('site.title')}} - {{$post->title}}'/>
+    <meta name='og:description' content='{{$post->meta_description}}'/>
     <!-- Favicons -->
     <link rel='icon' type='image/x-icon' href='/images/spectrum.ico' />
     <link rel='icon' type='image/png' href='/images/spectrum.png' />
