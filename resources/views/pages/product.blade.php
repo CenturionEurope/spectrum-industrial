@@ -86,8 +86,7 @@
                                 </div>
                                 {{$product->ProductName}} <br>
                                 &pound;{{ $product->Price }} <br>
-                                <sub>{{$product->ProductCode}}</sub><br>
-                                
+                                <sub>{{$product->ProductCode}}</sub><br>                                
                             </div>
                             <div class="col-lg-3">
                                     <div class="productimage">
@@ -113,10 +112,8 @@
                                 &pound;{{ $product->Price }} <br>
                                 <sub>{{$product->ProductCode}}</sub><br>
                             </div>
-                    </div>                                     
-                    
-                </div>
-                               
+                    </div>               
+                </div>                     
             </div>
             <div class="col-lg-3">
                 <div class="sidebar">

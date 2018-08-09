@@ -33,6 +33,12 @@ Route::get('product/{slug}', function($slug){
 	return view('pages.product', compact('product','posts'));
 });
 
+// All Products
+Route::get('products', function($slug){
+    $products = App\Product::all();        
+	return view('pages.productrange', compact('products'));
+});
+
 // Custom Routes Below this Point //
 
 // LESS Controller //
