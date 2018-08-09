@@ -1,7 +1,6 @@
 <div class="container news">
     <div class="row">
-        @foreach($posts as $post)
-        @if
+        @foreach($posts as $post)        
         <div class="col-md-4">
             <div class="newsimage">
                 <img src="{{ Voyager::image( $post->image ) }}">                

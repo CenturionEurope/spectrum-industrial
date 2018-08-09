@@ -35,6 +35,20 @@
                                 <div class="producttext">
                                     <h4>Product Description</h4>
                                     {!! $product->ProductDesc !!}
+                                    <table class="productinfo">
+                                        <thead class="spectrum">
+                                            <tr>
+                                                <th>Size</th>
+                                                <th>Code</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>40mm</td>
+                                                <td>{{$product->ProductCode}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                                    
                                 </div> 
                         </div>
                     </div>                                     
