@@ -52,11 +52,15 @@
                                 </div> 
                         </div>
                     </div>                                     
-                    <hr>                    
+                    <hr>
+                    <div class="related-products">
+                            <h4>Related Products</h4>
+                    </div>                    
                     <div class="tags">
                         <h5 class="tags"><b>Tags: <i>{{ $product->Tags }}</i></b></h5>                        
                     </div>
-                </div>               
+                </div>
+                               
             </div>
             <div class="col-lg-3">
                 <div class="sidebar">
