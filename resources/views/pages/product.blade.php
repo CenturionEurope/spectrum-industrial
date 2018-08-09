@@ -28,7 +28,29 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="productimage">
-                                <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="">
+                                <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $product->ProductName }} - {{$product->Category}}">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="productimage-sub">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $product->ProductName }} - {{$product->Category}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="productimage-sub">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $product->ProductName }} - {{$product->Category}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="productimage-sub">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $product->ProductName }} - {{$product->Category}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="productimage-sub">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $product->ProductName }} - {{$product->Category}}">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -48,17 +70,51 @@
                                                 <td>{{$product->ProductCode}}</td>
                                             </tr>
                                         </tbody>
-                                    </table>                                    
+                                    </table>  
+                                    <div class="tags">
+                                        <h5 class="tags"><b>Tags: <i>{{ $product->Tags }}</i></b></h5>                        
+                                    </div>                                  
                                 </div> 
                         </div>
-                    </div>                                     
+                    </div>                                                         
                     <hr>
-                    <div class="related-products">
-                            <h4>Related Products</h4>
-                    </div>                    
-                    <div class="tags">
-                        <h5 class="tags"><b>Tags: <i>{{ $product->Tags }}</i></b></h5>                        
-                    </div>
+                    <h4>Related Products</h4>
+                    <div class="row">                        
+                            <div class="col-lg-3">
+                                <div class="productimage">
+                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$product->ProductName}} - {{$product->Category}}, {{$product->SubCategory}} ">
+                                </div>
+                                {{$product->ProductName}} <br>
+                                &pound;{{ $product->Price }} <br>
+                                <sub>{{$product->ProductCode}}</sub><br>
+                                
+                            </div>
+                            <div class="col-lg-3">
+                                    <div class="productimage">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$product->ProductName}} - {{$product->Category}}, {{$product->SubCategory}} ">                                        
+                                    </div>
+                                    {{$product->ProductName}} <br>
+                                    &pound;{{ $product->Price }} <br>
+                                    <sub>{{$product->ProductCode}}</sub><br>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="productimage">
+                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$product->ProductName}} - {{$product->Category}}, {{$product->SubCategory}} ">
+                                </div>
+                                {{$product->ProductName}} <br>
+                                &pound;{{ $product->Price }} <br>
+                                <sub>{{$product->ProductCode}}</sub><br>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="productimage">
+                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$product->ProductName}} - {{$product->Category}}, {{$product->SubCategory}} ">
+                                </div>
+                                {{$product->ProductName}} <br>
+                                &pound;{{ $product->Price }} <br>
+                                <sub>{{$product->ProductCode}}</sub><br>
+                            </div>
+                    </div>                                     
+                    
                 </div>
                                
             </div>

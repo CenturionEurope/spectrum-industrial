@@ -11,7 +11,7 @@
     <!-- Open Graph Tags -->
     <meta name='og:title' content='{{setting('site.title')}} - {{$post->title}}'/>
     <meta name='og:type' content='website'/>
-    <meta name='og:url' content='/'/>
+    <meta name='og:url' content='http://{{$_SERVER['SERVER_NAME']}}/post/{{$post->slug}}'/>
     <meta name='og:image' content='{{ Voyager::image( $post->image ) }}'/>
     <meta name='og:site_name' content='{{setting('site.title')}} - {{$post->title}}'/>
     <meta name='og:description' content='{{$post->meta_description}}'/>
