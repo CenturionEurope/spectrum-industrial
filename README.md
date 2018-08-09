@@ -3,4 +3,5 @@
 # Spectrum Industrial
 
 The code contained within this repository is not for commercial use and is licensed to Spectrum Industrial.
+
 Copyright (c) 2018 Spectrum Industrial.
