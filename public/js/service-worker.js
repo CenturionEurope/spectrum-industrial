@@ -15,7 +15,7 @@ self.addEventListener('install', function(e) {
 });
 self.addEventListener('activate', function(e) {
  console.log('[ServiceWorker] Activate');
- e.waitUntil(
+ e.waitUntil(   
    caches.keys().then(function(keyList) {
      return Promise.all(keyList.map(function(key) {
        if (key !== cacheName && key !== dataCacheName) {
@@ -35,3 +35,19 @@ self.addEventListener('fetch', function(e) {
    })
  );
 });
+
+// Where the user should go when a notification is clicked
+self.addEventListener('notificationclick', function(e) {
+  var notification = e.notification;
+  var primaryKey = notification.data.primaryKey;
+  var action = e.action;
+
+  if (action === 'close') {
+    notification.close();
+  } else {
+    clients.openWindow('http://www.example.com');
+    notification.close();
+  }
+});
+
+
