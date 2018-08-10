@@ -8,7 +8,7 @@
     <div class="container newsdata">
         <div class="row">
             <div class="col-lg-9">
-                    <pre>{{print_r($Api)}}</pre>
+                    <pre>{{print_r($Api)}}</pre>                                
                 <h1>{{ $Api->Product->ProductName }} <span class="productcode">({{$Api->Product->ProductCode}})</span></h1>
                 <hr>   
             </div>  
@@ -29,27 +29,27 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="productimage">
-                                <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->Category->Name or ''}}">
+                                <img src="{{Voyager::image($Api->Product->FeatureImage)}}" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->CategoryInfo->name or ''}}">
                             </div>
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="productimage-sub">
-                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->Category->Name or ''}}">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->CategoryInfo->name or ''}}">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="productimage-sub">
-                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->Category->Name or ''}}">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->CategoryInfo->name or ''}}">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="productimage-sub">
-                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->Category->Name or ''}}">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->CategoryInfo->name or ''}}">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="productimage-sub">
-                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->Category->Name or ''}}">
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{ $Api->Product->ProductName }} - {{$Api->Product->CategoryInfo->name or ''}}">
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
                     <div class="row">                        
                             <div class="col-lg-3">
                                 <div class="productimage">
-                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->Category->Name or ''}}, {{$Api->Product->SubCategory}} ">
+                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->CategoryInfo->name or ''}}, {{$Api->Product->SubCategory}} ">
                                 </div>
                                 {{$Api->Product->ProductName}} <br>
                                 &pound;{{ $Api->Product->Price }} <br>
@@ -91,7 +91,7 @@
                             </div>
                             <div class="col-lg-3">
                                     <div class="productimage">
-                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->Category->Name or ''}}, {{$Api->Product->SubCategory}} ">                                        
+                                        <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->CategoryInfo->name or ''}}, {{$Api->Product->SubCategory}} ">                                        
                                     </div>
                                     {{$Api->Product->ProductName}} <br>
                                     &pound;{{ $Api->Product->Price }} <br>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <div class="productimage">
-                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->Category->Name or ''}}, {{$Api->Product->SubCategory}} ">
+                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->CategoryInfo->name or ''}}, {{$Api->Product->SubCategory}} ">
                                 </div>
                                 {{$Api->Product->ProductName}} <br>
                                 &pound;{{ $Api->Product->Price }} <br>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <div class="productimage">
-                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->Category->Name or ''}}, {{$Api->Product->SubCategory}} ">
+                                    <img src="/images/product-images/LOK070.jpg" class="tile" data-scale="2.4" alt="{{$Api->Product->ProductName}} - {{$Api->Product->CategoryInfo->name or ''}}, {{$Api->Product->SubCategory}} ">
                                 </div>
                                 {{$Api->Product->ProductName}} <br>
                                 &pound;{{ $Api->Product->Price }} <br>

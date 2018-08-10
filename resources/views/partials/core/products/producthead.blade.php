@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>{{setting('site.title')}} - {{$Api->Product->Category->Name or ''}} - {{$Api->Product->ProductName}} ({{$Api->Product->ProductCode}})</title>
+    <title>{{setting('site.title')}} - {{$Api->Product->CategoryInfo->name or ''}} - {{$Api->Product->ProductName}} ({{$Api->Product->ProductCode}})</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <meta name='keywords' content='{{ $Api->Product->Tags }}'/>
