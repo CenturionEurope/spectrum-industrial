@@ -5,16 +5,16 @@
                 <!-- Nav tabs -->
                 <ul class="nav light" id="navId">        
                     <li class="nav-item">
-                        <a class="nav-link facebook" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-facebook-f"></i></a>            
+                        <a class="nav-link facebook" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-facebook-f"></i></a>            
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-twitter"></i></a>            
+                        <a class="nav-link" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-twitter"></i></a>            
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-youtube"></i></a>            
+                        <a class="nav-link" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-youtube"></i></a>            
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-google-plus-g"></i></a>            
+                        <a class="nav-link" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-google-plus-g"></i></a>            
                     </li>                
                 </ul>
             </div>

@@ -12,7 +12,7 @@
     <meta name='og:title' content='{{setting('site.title')}} - {{$Api->Product->ProductName}} ({{$Api->Product->ProductCode}})'/>
     <meta name='og:type' content='website'/>
     <meta name='og:url' content='http://{{$_SERVER['SERVER_NAME']}}/product/{{$Api->Product->slug}}'/>
-    <meta name='og:image' content='{{ Voyager::image( $Api->Product->ProductImage ) }}'/>
+    <meta name='og:image' content='{{Voyager::image($Api->Product->FeatureImage)}}'/>
     <meta name='og:site_name' content='{{setting('site.title')}} - {{$Api->Product->ProductName}} ({{$Api->Product->ProductCode}})'/>
     <meta name='og:description' content='{{ $Api->Product->ProductDesc }}'/>
     <!-- Favicons -->

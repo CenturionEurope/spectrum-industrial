@@ -7,19 +7,21 @@
 <script src="/js/megamenu.js"></script>
 <script src="/js/product-tiles.js"></script>
 
-@if (Request::path() == '/product')
-    <!-- Check if the page is a product page or a normal page -->
-    <script src="/js/variableschema.js"></script>
-@endif
-
-<!-- Service Worker -->
-<script>
-        navigator.serviceWorker.register('/js/service-worker.js').catch(function(error) {
-            console.log("Service Worker Registered");
-        });
+<script type="text/javascript">
+console.log("this is a {{ $Api->Product->ProductName }} product page in {{$Api->Product->CategoryInfo->name or ''}} category");
 </script>
 
-<!-- End Service Worker -->
-
+<!-- Product Schema -->
+<script>    
+    {
+      "@context": "http://schema.org/", 
+      "@type": "Product", 
+      "name": "{{ $Api->Product->ProductName }}",
+      "image": "{{Voyager::image($Api->Product->FeatureImage)}}",
+      "description": "qwdqqwdq",
+      "brand": "Spectrum",
+      "sku": "{{$Api->Product->ProductCode}}"
+    }
+</script>
 <!-- Cookie Consent -->
 @include('cookieConsent::index')
