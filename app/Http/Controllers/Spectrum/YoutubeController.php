@@ -6,15 +6,16 @@ use App\Http\Controllers\Controller;
 
 class YoutubeController extends Controller{
 
-        //Get Youtube Video ID from database
+    //Get Youtube Video ID from database
     $VideoID = DB::table('videos')->get();
+
+    // Set API Key
+    $ApiKey = 'AIzaSyDEwPpFGRrJdcoVxqTAWIEPKN5yDxhldbY';
 
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://www.googleapis.com/youtube/v3/videos/?id=$VideoID
-    &part=snippet%2CcontentDetails%2Cstatistics
-    &key=AIzaSyDEwPpFGRrJdcoVxqTAWIEPKN5yDxhldbY",
+    CURLOPT_URL => "https://www.googleapis.com/youtube/v3/videos/?id=$VideoID&part=snippet%2CcontentDetails%2Cstatistics&key=$ApiKey",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
