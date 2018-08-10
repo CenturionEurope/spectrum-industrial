@@ -1,11 +1,14 @@
 <div id="carouselId" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img src="/images/scaffold-background.jpg" class="slide" alt="">
-        </div>
+            <img src="/images/custom-signs.jpg" class="slide" alt="">
+        </div>           
         <div class="carousel-item slide">
-            <img src="/images/scaffold-background.jpg" class="slide" alt="">
-        </div>        
+            <img src="/images/scaff-tag.jpg" class="slide" alt="">
+        </div>  
+        <div class="carousel-item slide">
+            <img src="/images/pat-plug.jpg" class="slide" alt="">
+        </div>      
     </div>
     <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

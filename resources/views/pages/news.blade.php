@@ -13,12 +13,15 @@
                <hr>
                @foreach($posts as $post)
                 <div class="news-article">
-                    <h3>{{ $post->title }}</h3>
-                    <p>{{$post->meta_description}}</p>
+                    <div class="feature-image">
+                        <a href="/post/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}" alt="{{$post->title}}"></a>
+                    </div>
+                    <a href="/post/{{ $post->slug }}"><h3>{{ $post->title }}</h3></a>
+                    <p>{{$post->excerpt}}</p>
                     <p><i class="far fa-clock"></i> {{ date('d M Y', strtotime($post->created_at)) }} <i class="far fa-user user"></i> {{$post->author_id}}</p>
                 </div>
+                <hr>
                @endforeach
-
            </div>
            <div class="col-lg-3">
                 <div class="sidebar">
