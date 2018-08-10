@@ -3,7 +3,7 @@
             <hr class="sidebar">
         </h5>
     </div>  
-@foreach($posts as $rpost)   
+@foreach($Api->Posts as $rpost)   
     <ul class="recentnews">
     <li class="newsitem">
         <a href="/post/{{ $rpost->slug }}"><span>{{ $rpost->title }}</span></a><br>

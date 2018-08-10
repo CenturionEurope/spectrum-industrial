@@ -13,8 +13,11 @@
 
 // General Pages //
 Route::get('/', function () {
-    $posts = App\Post::all();
-    return view('pages.welcome', compact('posts'));
+    $Api = (object)array(
+        'Posts' => App\Post::all()
+    );    
+
+    return view('pages.welcome')->with('Api', $Api);
 });
 
 // Templating Pages //
@@ -22,22 +25,31 @@ Route::get('/', function () {
 // Single Posts from the News Section //
 Route::get('post/{slug}', function($slug){
     $post = App\Post::where('slug', '=', $slug)->firstOrFail();
-    $posts = App\Post::all();
-	return view('pages.post', compact('post','posts'));
+    $Api = (object)array(
+        'Posts' => App\Post::all()
+    );    
+
+	return view('pages.post', compact('post','Api'));
 });
 
 // All Posts (News Page)
 Route::get('news', function(){
-    $posts = App\Post::all();        
-	return view('pages.news', compact('posts'));
+    $Api = (object)array(
+        'Posts' => App\Post::all()
+    );    
+	return view('pages.news')->with('Api', $Api);
 });
 
 
 //Single Product
 Route::get('product/{slug}', function($slug){
-    $product = App\Product::where('slug', '=', $slug)->firstOrFail();    
-    $posts = App\Post::all();
-	return view('pages.product', compact('product','posts'));
+
+    $Api = (object)array(
+        'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($slug),
+        'Posts' => App\Post::all()
+    );
+
+	return view('pages.product')->with('Api', $Api);
 });
 
 // All Products (Primary Products Page)

@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>{{setting('site.title')}} - {{$product->Category}} - {{$product->ProductName}} ({{$product->ProductCode}})</title>
+    <title>{{setting('site.title')}} - {{$Api->Product->Category->Name or ''}} - {{$Api->Product->ProductName}} ({{$Api->Product->ProductCode}})</title>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <meta name='keywords' content='{{ $product->Tags }}'/>
-    <meta name='description' content='{{ $product->ProductDesc }}'/>
+    <meta name='keywords' content='{{ $Api->Product->Tags }}'/>
+    <meta name='description' content='{{ $Api->Product->ProductDesc }}'/>
     <meta name='copyright' content='{{setting('company.company_name')}}'>
     <meta name='author' content='{{setting('company.company_name')}}'>
     <!-- Open Graph Tags -->
-    <meta name='og:title' content='{{setting('site.title')}} - {{$product->ProductName}} ({{$product->ProductCode}})'/>
+    <meta name='og:title' content='{{setting('site.title')}} - {{$Api->Product->ProductName}} ({{$Api->Product->ProductCode}})'/>
     <meta name='og:type' content='website'/>
-    <meta name='og:url' content='http://{{$_SERVER['SERVER_NAME']}}/product/{{$product->slug}}'/>
-    <meta name='og:image' content='{{ Voyager::image( $product->ProductImage ) }}'/>
-    <meta name='og:site_name' content='{{setting('site.title')}} - {{$product->ProductName}} ({{$product->ProductCode}})'/>
-    <meta name='og:description' content='{{ $product->ProductDesc }}'/>
+    <meta name='og:url' content='http://{{$_SERVER['SERVER_NAME']}}/product/{{$Api->Product->slug}}'/>
+    <meta name='og:image' content='{{ Voyager::image( $Api->Product->ProductImage ) }}'/>
+    <meta name='og:site_name' content='{{setting('site.title')}} - {{$Api->Product->ProductName}} ({{$Api->Product->ProductCode}})'/>
+    <meta name='og:description' content='{{ $Api->Product->ProductDesc }}'/>
     <!-- Favicons -->
     <link rel='icon' type='image/x-icon' href='/images/spectrum.ico' />
     <link rel='icon' type='image/png' href='/images/spectrum.png' />
