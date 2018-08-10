@@ -64,3 +64,6 @@ Route::get('/Resources/LESS', ['uses' =>'Spectrum\LessController@Less']);
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+// RSS Feed
+Route::feeds();
