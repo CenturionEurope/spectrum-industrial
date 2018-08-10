@@ -8,6 +8,7 @@
     <div class="container newsdata">
         <div class="row">
             <div class="col-lg-9">
+                    <pre>{{print_r($Api)}}</pre>
                 <h1>{{ $Api->Product->ProductName }} <span class="productcode">({{$Api->Product->ProductCode}})</span></h1>
                 <hr>   
             </div>  
@@ -22,7 +23,7 @@
             <div class="col-lg-9">
                 <div class="post">
                     <h1 class="categories">
-                        Category: {{$Api->Product->Category->Name or ''}}/{{$Api->Product->SubCategory}}
+                        Category: <a href="/{{$Api->Product->CategoryInfo->slug}}">{{$Api->Product->CategoryInfo->name or ''}}</a> / {{$Api->Product->SubCategory}}
                     </h1>
                     <hr>
                     <div class="row">

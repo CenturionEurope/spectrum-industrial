@@ -17,20 +17,7 @@ Route::get('/', function () {
         'Posts' => App\Post::all(),
         'YouTube' => app('App\Http\Controllers\Spectrum\YoutubeController')->GetVideos()
     );    
-
     return view('pages.welcome')->with('Api', $Api);
-});
-
-// Templating Pages //
-
-// Single Posts from the News Section //
-Route::get('post/{slug}', function($slug){
-    $post = App\Post::where('slug', '=', $slug)->firstOrFail();
-    $Api = (object)array(
-        'Posts' => App\Post::all()
-    );    
-
-	return view('pages.post', compact('post','Api'));
 });
 
 // All Posts (News Page)
@@ -41,6 +28,22 @@ Route::get('news', function(){
 	return view('pages.news')->with('Api', $Api);
 });
 
+// All Products (Primary Products Page)
+Route::get('products', function(){
+    $products = App\Product::all();        
+	return view('pages.productrange', compact('products'));
+});
+
+
+// Templating Pages
+// Single Posts from the News Section 
+Route::get('post/{slug}', function($slug){
+    $post = App\Post::where('slug', '=', $slug)->firstOrFail();
+    $Api = (object)array(
+        'Posts' => App\Post::all()
+    );    
+	return view('pages.post', compact('post','Api'));
+});
 
 //Single Product
 Route::get('product/{slug}', function($slug){
@@ -53,18 +56,11 @@ Route::get('product/{slug}', function($slug){
 	return view('pages.product')->with('Api', $Api);
 });
 
-// All Products (Primary Products Page)
-Route::get('products', function(){
-    $products = App\Product::all();        
-	return view('pages.productrange', compact('products'));
-});
-
-// Custom Routes Below this Point //
-
-// LESS Controller //
+// Custom Routes Below this Point 
+// LESS Controller 
 Route::get('/Resources/LESS', ['uses' =>'Spectrum\LessController@Less']);
 
-// Voyager Admin //
+// Voyager Admin 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
