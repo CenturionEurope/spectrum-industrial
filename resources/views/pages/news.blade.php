@@ -9,6 +9,7 @@
     <div class="container">
         <div class="row content-area">            
            <div class="col-lg-9">
+                <pre>{{print_r($Api)}}</pre>
                <h4>Latest News</h4>
                <hr>
                @foreach($posts as $post)

@@ -7,8 +7,9 @@ use App\Http\Controllers\Controller;
 class YoutubeController extends Controller{
 
     public function GetVideos(){
+
         //Get Youtube Video ID from database
-        $VideoID = DB::table('videos')->get();
+        $VideoID = DB::table('videos')->select('YoutubeID')->first();
 
         // Set API Key
         $ApiKey = 'AIzaSyDEwPpFGRrJdcoVxqTAWIEPKN5yDxhldbY';
@@ -39,7 +40,6 @@ class YoutubeController extends Controller{
     }
 
 }
-
 
 
 

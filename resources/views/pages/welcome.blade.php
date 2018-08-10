@@ -6,6 +6,7 @@
         @include('partials.core.main-nav')
     </div>
     @include('partials.elements.main-slider')
+    <pre>{{print_r($Api)}}</pre>
     <div class="container">
         <div class="row content-area">            
             <div class="col-lg-3">
@@ -38,7 +39,6 @@
             </div>
         </div>   
     </div>
-    @include('partials.elements.postgrid-3')    
     @include('partials.core.footer')
 @include('partials.core.js')
 </body>

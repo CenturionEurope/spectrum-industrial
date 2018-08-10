@@ -23,10 +23,10 @@ class URLController extends Controller
     public function CleanImageURL($string)
     {
         // Makes a connection to the database products table and pulls ProductImage column
-        $ProductImage = DB::table('products')->pluck('ProductImage')->get();      
+        $ProductImage = DB::table('products')->get();      
 
         // replace malformed URL from Voyager
-        $resimage = preg_replace("", "", $string);         
+        $resimage = preg_replace("/[^a-zA-Z]/", "", $string);    
 
         // return
         return $resimage;

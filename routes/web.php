@@ -14,7 +14,8 @@
 // General Pages //
 Route::get('/', function () {
     $Api = (object)array(
-        'Posts' => App\Post::all()
+        'Posts' => App\Post::all(),
+        'YouTube' => app('App\Http\Controllers\Spectrum\YoutubeController')->GetVideos()
     );    
 
     return view('pages.welcome')->with('Api', $Api);
@@ -46,7 +47,7 @@ Route::get('product/{slug}', function($slug){
 
     $Api = (object)array(
         'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($slug),
-        'Posts' => App\Post::all()
+        'Posts' => App\Post::all()        
     );
 
 	return view('pages.product')->with('Api', $Api);
