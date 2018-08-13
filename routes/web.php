@@ -29,8 +29,7 @@
     });
 
 // All Products (Primary Products Page)
-    Route::get('products', function(){
-        
+    Route::get('products', function(){        
         $Api = (object)array(
             'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProducts()
         );
@@ -38,7 +37,7 @@
     });
 
 //Category Page
-    Route::get('category/{Category}', function($Category){
+    Route::get('{Category}', function($Category){
         $Api = (object)array(
             'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($Category),
         );
@@ -58,12 +57,10 @@
 
 //Single Product
     Route::get('product/{slug}', function($slug){
-
         $Api = (object)array(
             'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($slug),
             'Posts' => App\Post::all()        
         );
-
         return view('pages.product')->with('Api', $Api);
     });
 
