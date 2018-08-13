@@ -15,7 +15,7 @@
 Route::get('/', function () {
     $Api = (object)array(
         'Posts' => App\Post::all(),
-        'YouTube' => app('App\Http\Controllers\Spectrum\YoutubeController')->GetVideos()
+        // 'YouTube' => app('App\Http\Controllers\Spectrum\YoutubeController')->GetVideos() - Turned off
     );    
     return view('pages.welcome')->with('Api', $Api);
 });
