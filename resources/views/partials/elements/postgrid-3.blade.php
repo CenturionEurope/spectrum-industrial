@@ -6,7 +6,7 @@
                 <img src="{{ Voyager::image( $post->image ) }}">                
             </div>   
             <div class="newsinfo">
-                <a href="/post/{{ $post->slug }}"><span>{{ $post->title }}</span></a>
+                <a href="/news/{{ $post->slug }}"><span>{{ $post->title }}</span></a>
             </div>     
         </div>
     @endforeach
