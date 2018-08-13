@@ -7,27 +7,40 @@
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#tab2Id">Action</a>
-                <a class="dropdown-item" href="#tab3Id">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#tab4Id">Action</a>
+            <div class="dropdown-menu mega">
+                <div class="container">
+                    <div class="mega">
+                        <div class="row">                        
+                            @foreach($Api->Categories as $category)
+                                <div class="col-lg-4">   
+                                    <div class="nav-item">
+                                        <img src="{{ Voyager::image( $category->CategoryImage ) }}" alt=""> <a href="/">{{$category->name}}</a>
+                                    </div>                                                        
+                                </div>
+                            @endforeach                      
+                        </div>
+                        <div class="row">
+                            <div class="menu-advert">
+                                <img src="{{ Voyager::image(setting('site.nav_adert'))}}" width="100%" alt="setting('company.company_name')">
+                            </div>
+                        </div>
+                    </div>                    
+                </div>                
             </div>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#tab2Id">Action</a>
-                <a class="dropdown-item" href="#tab3Id">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#tab4Id">Action</a>
+                <a class="dropdown-item" href="/data-sheets">Datasheets</a>
+                <a class="dropdown-item" href="/infographics">Infographics</a>               
+                <a class="dropdown-item" href="/literature">Literature</a>
             </div>
         </li>  
         <li class="nav-item"><a href="/" class="nav-link"> About Us </a></li>
         <li class="nav-item"><a href="/" class="nav-link">Become a Distributor</a></li>
         <li class="nav-item"><a href="/" class="nav-link">Find a Stockist</a></li>
         <li class="nav-item"><a href="/" class="nav-link">Spectrum Industrial UAE</a></li>
-        <li class="nav-item"><a href="/" class="nav-link">News</a></li>  
+        <li class="nav-item"><a href="/news" class="nav-link">News</a></li>  
         <li class="nav-item"><a href="/" class="nav-link">Catalogues</a></li>                        
     </ul>
        

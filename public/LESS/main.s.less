@@ -16,6 +16,36 @@ div.logo{
         height: 150px;
     }
 }
+
+div.dropdown-menu{
+    &.mega{
+        div.container{
+            width: 80vw;  
+            padding: 20px;       
+            div.nav-item{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+                a{
+                    color: @spectrum_grey;
+                    text-decoration: none;
+                    font-weight: 700;
+                    padding-left: 10px;
+                    &:hover{
+                        color: @spectrum_red;
+                    }
+                }
+            }   
+        }
+        div.menu-advert{
+            margin-top: 25px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
 /* Navigation */
 div.header{
     background-color: @spectrum_white;
