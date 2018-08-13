@@ -1,7 +1,7 @@
 <div class="container news">
-    <div class="row">
-        @foreach($posts as $post)        
-        <div class="col-md-4">
+    <div class="row">       
+        @foreach($Api->Posts as $post)        
+        <div class="col-md-3">
             <div class="newsimage">
                 <img src="{{ Voyager::image( $post->image ) }}">                
             </div>   

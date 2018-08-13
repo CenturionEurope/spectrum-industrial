@@ -39,6 +39,7 @@
             </div>
         </div>   
     </div>
+    @include('partials.elements.postgrid-3')
     @include('partials.core.footer')
 @include('partials.core.js')
 </body>
