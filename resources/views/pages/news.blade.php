@@ -12,7 +12,7 @@
                 <pre>{{print_r($Api)}}</pre>
                <h4>Latest News</h4>
                <hr>
-               @foreach($Posts as $post)
+               @foreach($posts as $post)
                 <div class="news-article">
                     <div class="feature-image">
                         <a href="/post/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}" alt="{{$post->title}}"></a>
