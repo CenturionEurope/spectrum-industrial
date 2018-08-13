@@ -22,7 +22,13 @@ class DataController extends Controller
         return DB::table('literatures')->get();
     }
 
-    
+    public function GetSlides()
+    {
+        return DB::table('sliders')->get();
+    }
 
-
+    public function GetMaterials()
+    {
+        return DB::table('materialinformations')->get();
+    }
 }

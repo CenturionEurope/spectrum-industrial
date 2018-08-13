@@ -471,14 +471,35 @@ div.datacontainer{
         }
     }
     div.actions{
-        width: 100%;
-        div.action1{
-            width: 49%;
-            display: inline;
-        }
-        div.action2{
-            width: 49%;
-            display: inline;
+        width: 100%;        
+    }
+}
+
+/* Materials */
+
+table.materials{
+    width: 100%;
+    thead{
+        tr{
+            td{
+                background-color: @spectrum_red;
+                color: @spectrum_white;
+                padding: 10px;
+                border: 1px solid @spectrum_grey;
+            }
         }
     }
+    tbody{
+        tr{
+            &:hover{
+                background-color: @spectrum_grey;
+                color: @spectrum_white;
+            }
+            td{
+                border: 1px solid @spectrum_grey;
+                padding-left: 10px;
+                
+            }
+        }
+    }    
 }
