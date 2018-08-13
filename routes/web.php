@@ -64,6 +64,30 @@
         return view('pages.product')->with('Api', $Api);
     });
 
+// Data Sheets
+    Route::get('data-sheets', function(){        
+        $Api = (object)array(
+            'Datasheets' => app('App\Http\Controllers\Spectrum\DataController')->GetDatasheets()
+        );
+        return view('pages.datasheets')->with('Api', $Api);
+    });
+
+// Infographics
+    Route::get('infographics', function(){        
+        $Api = (object)array(
+            'Infographics' => app('App\Http\Controllers\Spectrum\DataController')->GetInfographics()
+        );
+        return view('pages.infographics')->with('Api', $Api);
+    });
+
+// Literature
+    Route::get('literature', function(){        
+        $Api = (object)array(
+            'Literature' => app('App\Http\Controllers\Spectrum\DataController')->GetLiterature()
+        );
+        return view('pages.literature')->with('Api', $Api);
+    });
+
 // Custom Routes Below this Point 
 // LESS Controller 
     Route::get('/Resources/LESS', ['uses' =>'Spectrum\LessController@Less']);
