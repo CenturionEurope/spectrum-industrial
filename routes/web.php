@@ -101,6 +101,7 @@
 Route::get('material-information', function(){        
     $Api = (object)array(
         'Materials' => app('App\Http\Controllers\Spectrum\DataController')->GetMaterials(),
+        'Posts' => App\Post::all(),
         'Slides' => app('App\Http\Controllers\Spectrum\DataController')->GetSlides()
     );
     return view('pages.materials')->with('Api', $Api);

@@ -31,8 +31,13 @@
                     </tbody>
                 </table>           
             </div>
-            <div class="col-lg-3">
-                
+            <div class="col-lg-3 col-lg-offset-1">
+                <div class="sidebar">
+                    @include('sidebar.widgets.recent-posts')  
+                    
+                    <!-- Keep contact widget at bottom -->
+                    @include('sidebar.widgets.contactinfo')                 
+                </div>
             </div>    
         </div>  
     </div>
