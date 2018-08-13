@@ -17,35 +17,7 @@ div.logo{
     }
 }
 
-div.dropdown-menu{
-    &.mega{
-        div.container{
-            width: 80vw;  
-            padding: 20px;       
-            div.nav-item{
-                img{
-                    width: 50px;
-                    height: 50px;
-                }
-                a{
-                    color: @spectrum_grey;
-                    text-decoration: none;
-                    font-weight: 700;
-                    padding-left: 10px;
-                    &:hover{
-                        color: @spectrum_red;
-                    }
-                }
-            }   
-        }
-        div.menu-advert{
-            margin-top: 25px;
-            img{
-                width: 100%;
-            }
-        }
-    }
-}
+
 /* Navigation */
 div.header{
     background-color: @spectrum_white;
@@ -125,6 +97,39 @@ div.branding{
     background-color: @spectrum_white;
     overflow: hidden;
     width: 100%;    
+}
+div.dropdown-menu{
+    &.mega{
+        div.container{
+            width: 80vw;  
+            padding: 20px;       
+            div.nav-item{
+                margin-top: 10px;
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+                a{
+                    color: @spectrum_grey;
+                    text-decoration: none;
+                    font-weight: 700;
+                    padding-left: 10px;
+                    &:hover{
+                        color: @spectrum_red;
+                    }
+                }
+            }   
+        }
+        div.menu-advert{
+            margin-top: 25px;            
+            img{
+                width: 100%;
+                margin-top: 25px;
+                margin-bottom: -25px;
+                height: 100px;
+            }
+        }
+    }
 }
 
 /* Slider */

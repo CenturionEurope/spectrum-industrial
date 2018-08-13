@@ -14,15 +14,17 @@
                             @foreach($Api->Categories as $category)
                                 <div class="col-lg-4">   
                                     <div class="nav-item">
-                                        <img src="{{ Voyager::image( $category->CategoryImage ) }}" alt=""> <a href="/">{{$category->name}}</a>
+                                            <a href="{{$category->slug}}"><img src="{{ Voyager::image( $category->CategoryImage ) }}" alt=""> {{$category->name}}</a>
                                     </div>                                                        
                                 </div>
                             @endforeach                      
                         </div>
                         <div class="row">
-                            <div class="menu-advert">
-                                <img src="{{ Voyager::image(setting('site.nav_adert'))}}" width="100%" alt="setting('company.company_name')">
-                            </div>
+                            <div class="col-lg-12">
+                                <div class="menu-advert">
+                                    <img src="{{ Voyager::image(setting('site.nav_adert'))}}" width="100%" alt="setting('company.company_name')">
+                                </div>
+                            </div>                            
                         </div>
                     </div>                    
                 </div>                
@@ -31,7 +33,7 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="/data-sheets">Datasheets</a>
+                <a class="dropdown-item" href="/data-sheets">Datasheets</a>            
                 <a class="dropdown-item" href="/infographics">Infographics</a>               
                 <a class="dropdown-item" href="/literature">Literature</a>
             </div>
