@@ -8,18 +8,17 @@
     @include('partials.elements.main-slider')
     <div class="container">
         <div class="row content-area">            
-           <div class="col-lg-9">
-                <pre>{{print_r($Api)}}</pre>
+           <div class="col-lg-9">                
                <h4>Latest News</h4>
                <hr>
-               @foreach($posts as $post)
+               @foreach($Api->Posts as $post)
                 <div class="news-article">
                     <div class="feature-image">
                         <a href="/post/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}" alt="{{$post->title}}"></a>
                     </div>
-                    <a href="/post/{{ $post->slug }}"><h3>{{ $post->title }}</h3></a>
+                    <a href="/news/{{ $post->slug }}"><h3>{{ $post->title }}</h3></a>
                     <p>{{$post->excerpt}}</p>
-                    <p><i class="far fa-clock"></i> {{ date('d M Y', strtotime($post->created_at)) }} <i class="far fa-user user"></i> {{$post->author_id}}</p>
+                    <p><i class="far fa-clock"></i> {{ date('dS M Y', strtotime($post->created_at)) }} <i class="far fa-user user"></i> {{$post->author_id}}</p>
                 </div>
                 <hr>
                @endforeach

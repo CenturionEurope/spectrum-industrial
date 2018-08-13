@@ -30,8 +30,10 @@
 
 // All Products (Primary Products Page)
     Route::get('products', function(){
-        $products = App\Product::all();        
-        return view('pages.productrange', compact('products'));
+        $Api = (object)array(
+            'Product' => App\Product::all()
+        );
+        return view('pages.productrange')->with('Api', $Api);
     });
 
 //Category Page
@@ -45,7 +47,7 @@
 
 // Templating Pages
 // Single Posts from the News Section 
-    Route::get('post/{slug}', function($slug){
+    Route::get('news/{slug}', function($slug){
         $post = App\Post::where('slug', '=', $slug)->firstOrFail();
         $Api = (object)array(
             'Posts' => App\Post::all()

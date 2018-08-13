@@ -2,21 +2,33 @@
     <div class="container">        
         <div class="row">
             <div class="col-lg-3">
-            <h5>Find Us</h5>           
-                <hr>
+                <div class="footerhead">
+                    <h5>Find Us</h5>
+                </div>
             </div>
             <div class="col-lg-3">
-                <h5>@Spectrum_Ind</h5>
-                    <hr>
+                <div class="footerhead">
+                    <h5>Latest Tweets</h5>
+                </div>         
+                <div class="latest-tweets">
+
+                </div>
+                <div class="twitter-username">
+                    <a href="https://twitter.com/spectrum_ind" target="_blank" title="Spectrum Industrial Twitter" class="footerlink">
+                        <p>Follow us on twitter @Spectrum_Ind</p>
+                    </a>
+                </div>
                 </div>
             <div class="col-lg-3">
-                <h5>Quick Links</h5>
-                    <hr>
+                <div class="footerhead">
+                    <h5>Quick Links</h5>
                 </div>
+            </div>
             <div class="col-lg-3">
-                <h5>Join our newsletter</h5>
-                    <hr>
+                <div class="footerhead">
+                    <h5>Newsletter</h5>
                 </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12">

@@ -21,7 +21,7 @@
                     {!! $post->body !!}
                     <hr>
                     <div class="tags">
-                        Tags: {{ $post->meta_keywords }}
+                        <b>Tags: <i>{{ $post->meta_keywords }}</i></b>
                     </div>
                 </div>               
             </div>
