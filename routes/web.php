@@ -29,7 +29,7 @@
     });
 
 // All Products (Primary Products Page)
-    Route::get('products', function(){        
+    Route::get('product-categories', function(){        
         $Api = (object)array(
             'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProducts()
         );

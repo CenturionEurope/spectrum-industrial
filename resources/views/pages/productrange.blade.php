@@ -15,10 +15,10 @@
                     <div class="col-lg-4">
                         <div class="categoryholder">
                             <div class="category-image">
-                                <img src="{{Voyager::image($product->Category->CategoryImage)}}" alt="{{$product->Category->name}}">
-                            </div>
-                            <div class="category-name">
                                 <a href="{{$product->Category->slug}}" title="{{$product->Category->name}}">
+                                    <img src="{{Voyager::image($product->Category->CategoryImage)}}" alt="{{$product->Category->name}}">
+                            </div>
+                            <div class="category-name">                                
                                     <h4 class="center">{{$product->Category->name}}</h4>
                                 </a>                          
                             </div>

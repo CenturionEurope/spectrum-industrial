@@ -267,10 +267,12 @@ div.productimage{
     border: 2px solid @spectrum_grey;
     display: inline-block;
     min-height: 200px;
+    transition: all 0.3s;
     overflow: hidden;
     img{
         width: 100%;
         &:hover{
+            transition: all 0.3s;
             -moz-transform: scale(1.5);
             -webkit-transform: scale(1.5);
             transform: scale(1.5);
@@ -312,7 +314,7 @@ div.price{
     text-align: right;
 }
 div.product-table{
-    // fill
+    width: 100%;
 }
 
 table.productinfo{
@@ -417,9 +419,17 @@ div.categoryholder{
         width: 100%;
         border: 5px solid @spectrum_red;
         min-height: 300px;
+        overflow: hidden;
         img{
+            transition: all 0.3s;
             width: 100%;
             max-height: 300px;
+            &:hover{
+                -moz-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                transition: all 0.3s;
+            }
         }
     }
     div.category-name{
