@@ -28,7 +28,7 @@
         return view('pages.news')->with('Api', $Api);
     });
 
-// All Products (Primary Products Page)
+// All Products (Show all product categories)
     Route::get('product-categories', function(){        
         $Api = (object)array(
             'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProducts()
