@@ -56,7 +56,7 @@
     });
 
 //Single Product
-    Route::get('product/{slug}', function($slug){
+    Route::get('{Category}/{slug}', function($slug){
         $Api = (object)array(
             'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($slug),
             'Posts' => App\Post::all()        
