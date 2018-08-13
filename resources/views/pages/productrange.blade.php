@@ -11,18 +11,9 @@
             <pre>{{print_r($Api)}}</pre>                 
             <div class="container">
                 <div class="row">
-                @foreach($Api->Product as $product) 
+                @foreach($Categories as $product) 
                     <div class="col-lg-4">
-                        <div class="categoryholder">
-                            <div class="category-image">
-                                <a href="{{$product->Category->slug}}" title="{{$product->Category->name}}">
-                                    <img src="{{Voyager::image($product->Category->CategoryImage)}}" alt="{{$product->Category->name}}">
-                            </div>
-                            <div class="category-name">                                
-                                    <h4 class="center">{{$product->Category->name}}</h4>
-                                </a>                          
-                            </div>
-                        </div>
+                        
                     </div>
                 @endforeach
                 </div>

@@ -24,10 +24,5 @@ class ProductController extends Controller
         return $Products;
     }
 
-    public function GetCategories()
-    {
-        $Category = DB::table('categories')->get();
-        return $Categories
-    }
 
 }
