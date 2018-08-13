@@ -389,6 +389,10 @@ div.news-article{
     }
 }
 
+/* Branding Slider */
+
+
+
 /* Footer */
 
 div.footerhead{
@@ -410,14 +414,38 @@ a.footerlink{
 
 /* Product Category page */
 
-div.catgeoryholder{
+div.categoryholder{
     padding: 20px;
+    
     div.category-image{
         width: 100%;
+        border: 5px solid @spectrum_red;
+        min-height: 300px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            max-height: 300px;
+            &:hover{
+                -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                 transform: scale(1.1);
+                
+            }
+        }
     }
     div.category-name{
-        h4{
-            text-align: center;
+        background-color: @spectrum_red;
+        color: @spectrum_white;
+        padding: 10px 5px;
+        text-align: center;
+        a{
+            color: @spectrum_white;
+            text-decoration: none;
+            transition: all 0.3s;
+            &:hover{
+                color: @spectrum_black;
+                transition: all 0.3s;
+            }
         }
     }
 }
