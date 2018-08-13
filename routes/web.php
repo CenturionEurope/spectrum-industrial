@@ -73,5 +73,4 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-// RSS Feed
-Route::feeds();
+
