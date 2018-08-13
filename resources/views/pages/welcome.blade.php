@@ -6,7 +6,6 @@
         @include('partials.core.main-nav')
     </div>
     @include('partials.elements.main-slider')
-    <pre>{{print_r($Api)}}</pre>
     <div class="container">
         <div class="row content-area">            
             <div class="col-lg-3">
