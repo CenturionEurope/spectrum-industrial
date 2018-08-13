@@ -7,12 +7,12 @@
 <script src="/js/megamenu.js"></script>
 <script src="/js/product-tiles.js"></script>
 
+
+<!-- Product Schema -->
 <script type="text/javascript">
 console.log("this is a {{ $Api->Product->ProductName }} product page in {{$Api->Product->CategoryInfo->name or ''}} category");
 </script>
-
-<!-- Product Schema -->
-<script>    
+<script type="application/ld+json">    
     {
       "@context": "http://schema.org/", 
       "@type": "Product", 

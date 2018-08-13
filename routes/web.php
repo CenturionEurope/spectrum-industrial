@@ -34,6 +34,14 @@ Route::get('products', function(){
 	return view('pages.productrange', compact('products'));
 });
 
+//Category Page
+Route::get('category/{Category}', function($Category){
+    $Api = (object)array(
+        'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($Category),
+    );
+	return view('pages.category')->with('Api', $Api);
+});
+
 
 // Templating Pages
 // Single Posts from the News Section 

@@ -7,8 +7,8 @@
     </div>    
     <div class="container newsdata">
         <div class="row">
-            <div class="col-lg-9">
-                    <pre>{{print_r($Api)}}</pre>                                
+                <pre>{{print_r($Api)}}</pre> 
+            <div class="col-lg-9">                                                   
                 <h1>{{ $Api->Product->ProductName }} <span class="productcode">({{$Api->Product->ProductCode}})</span></h1>
                 <hr>   
             </div>  
