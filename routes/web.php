@@ -30,8 +30,9 @@
 
 // All Products (Primary Products Page)
     Route::get('products', function(){
+        
         $Api = (object)array(
-            'Product' => App\Product::all()
+            'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProducts()
         );
         return view('pages.productrange')->with('Api', $Api);
     });

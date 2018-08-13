@@ -18,7 +18,7 @@
                                 <img src="{{Voyager::image($product->CategoryImage)}}" alt="">
                             </div>
                             <div class="category-name">
-                               <h4>{{$product->Category}}</h4>                            
+                               <h4>{{$product->Category->name}}</h4>                            
                             </div>
                         </div>
                     </div>

@@ -14,4 +14,14 @@ class ProductController extends Controller
         return $Product;
     }
 
+    public function GetProducts()
+    {
+        $Products = \App\Product::all();
+        foreach($Products as $Product){
+            $Product->Category = DB::table('categories')->where('id',$Product->Category)->first();
+        }
+
+        return $Products;
+    }
+
 }
