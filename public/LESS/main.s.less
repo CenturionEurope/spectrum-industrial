@@ -8,6 +8,39 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Colours */
+
+.red{
+    color: @spectrum_red;
+}
+.redbg{
+    background-color: @spectrum_red !important;
+}
+.grey{
+    color: @spectrum_grey;
+}
+.black{
+    color: @spectrum_black;
+}
+.white{
+    color: @spectrum_white;
+}
+
+/* Margins */
+
+.mt35{
+    margin-top: 35px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mb35{
+    margin-bottom: 35px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+
 /* Branding */
 
 div.logo{
@@ -25,6 +58,38 @@ div.header{
     div.advert{
         margin-top: 30px;
         width: 100%;
+    }
+    div.shopping-cart{
+        margin-top: 55px;
+        text-align: center;
+       
+        p{
+        font-size: 16px;
+           
+        }
+    }
+    div.search{
+        margin-top: 35px;
+        div.redborder{
+            border: 5px solid @spectrum_red;
+        }
+        label{
+            font-weight: 700;
+            margin-bottom: -10px;
+        }
+        form{
+            i{
+                background-color: @spectrum_red;
+                padding: 21px;                
+            }
+            input.form-control.search{
+                border: 5px solid @spectrum_red;
+                padding: 14px !important;      
+                &:focus{
+                    outline: none !important;
+                }          
+            }
+        }
     }
 }
 nav{
@@ -301,7 +366,7 @@ div.contactdata{
         width: 100%;
         border-style: solid;
         border-width: 0 250px 20px 0;
-        border-color: transparent #e30613 transparent transparent;
+        border-color: transparent @spectrum_red transparent transparent;
     }    
 }
 
@@ -541,8 +606,7 @@ table.materials{
             }
             td{
                 border: 1px solid @spectrum_grey;
-                padding-left: 10px;
-                
+                padding-left: 10px;                
             }
         }
     }    

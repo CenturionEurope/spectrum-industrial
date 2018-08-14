@@ -14,7 +14,7 @@
                             @foreach($Api->Categories as $category)
                                 <div class="col-lg-4">   
                                     <div class="nav-item">
-                                            <a href="{{$category->slug}}"><img src="{{ Voyager::image( $category->CategoryImage ) }}" alt=""> {{$category->name}}</a>
+                                        <a href="{{$category->slug}}"><img src="{{ Voyager::image( $category->CategoryImage ) }}" alt=""> {{$category->name}}</a>
                                     </div>                                                        
                                 </div>
                             @endforeach                      
