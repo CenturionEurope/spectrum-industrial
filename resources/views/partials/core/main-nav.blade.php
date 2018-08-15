@@ -45,7 +45,6 @@
         <li class="nav-item"><a href="/news" class="nav-link">News</a></li>  
         <li class="nav-item"><a href="/" class="nav-link">Catalogues</a></li>                        
     </ul>
-       
     <!-- Tab panes -->
     <div class="tab-content">
         <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
