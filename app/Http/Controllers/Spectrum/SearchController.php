@@ -10,8 +10,13 @@ class SearchController extends Controller{
     {
         $request->input('search');
 
-            DB::table('products')->get();         
-            DB::table('categories')->get();
+            DB::table('products')
+            ->where('ProductName', 'like', 'search')
+            -get();
+                   
+            DB::table('categories')
+            ->where('name', 'like', 'search')
+            ->get();
 
             return();
 }
