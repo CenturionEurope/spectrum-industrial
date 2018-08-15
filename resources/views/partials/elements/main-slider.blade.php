@@ -5,7 +5,13 @@
         </div>   
         @foreach($Api->Slides as $slide)        
         <div class="carousel-item slide">
-            <img src="{{ Voyager::image( $slide->image ) }}" class="slide" alt="{{$slide->name}}">
+            <div class="slide-content" style="background-image: url({{ Voyager::image( $slide->image ) }})">
+                <div class="container">
+                    <div class="content right">
+                        {!!$slide->content!!}
+                    </div>
+                </div>
+            </div>
         </div>  
         @endforeach             
     </div>

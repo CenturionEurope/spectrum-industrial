@@ -61,11 +61,15 @@ div.header{
     }
     div.shopping-cart{
         margin-top: 55px;
-        text-align: center;
-       
+        text-align: center;       
         p{
-        font-size: 16px;
-           
+        font-size: 16px; 
+        i{
+            color: @spectrum_lightgrey;
+            &:hover{
+                color: @spectrum_red;
+            }
+        }          
         }
     }
     div.search{
@@ -626,3 +630,17 @@ table.materials{
         }
     }    
 }
+
+/* Category Boxes */
+
+/* Slider */
+div.slide-content{
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    div.container{
+        display: flex;
+    }    
+}
+

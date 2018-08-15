@@ -7,35 +7,16 @@
     </div>
     @include('partials.elements.main-slider')
     <div class="container">
-        <div class="row content-area">            
-            <div class="col-lg-3">
-                <div class="categorybox">
-                    <div class="catboxheader">
-                        <h5>Category Name</h5>
-                    </div>                    
-                </div>
-            </div>            
-            <div class="col-lg-3">
-                <div class="categorybox">
-                    <div class="catboxheader">
-                        <h5>Category Name</h5>
-                    </div>   
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="categorybox">
-                    <div class="catboxheader">
-                        <h5>Category Name</h5>
-                    </div>  
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="categorybox">
-                    <div class="catboxheader">
-                        <h5>Category Name</h5>
-                    </div> 
-                </div>
-            </div>
+                  
+        <div class="row content-area">  
+            <div class="col-lg-12">
+                <h3>Featured Categories</h3>
+                @foreach($Api->Categories as $category)
+
+                
+                    
+                @endforeach
+            </div>    
         </div>   
     </div>
     @include('partials.elements.postgrid-3')
