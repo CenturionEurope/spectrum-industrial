@@ -12,7 +12,7 @@ class SearchController extends Controller{
 
             DB::table('products')
             ->where('ProductName', 'like', 'search')
-            -get();
+            ->get();
                    
             DB::table('categories')
             ->where('name', 'like', 'search')
