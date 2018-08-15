@@ -1,10 +1,8 @@
-<div class="search ">
-    <div class="input-group md-form form-sm form-1 redborder">
-        <div class="input-group-prepend">
-            <span class="input-group-text redbg" id="basic-text1">
-                <i class="fa fa-search white" aria-hidden="true"></i>
-            </span>
-        </div>
-        <input class="form-control search" type="text" placeholder="Search Product Code or Keyword" aria-label="Search">
-    </div>
+<div class="search ">    
+    <div class="searchform">      
+        {!! Form::open(array('method' => 'Get')) !!}
+        {!! Form::text('search') !!}
+            <button class="search"><i class="fa fa-search white" aria-hidden="true"></i></button>
+        {!! Form::close() !!}
+    </div>    
 </div>
