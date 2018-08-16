@@ -39,6 +39,8 @@
     <meta name="msapplication-TileColor" content="#393939">
     <meta name="msapplication-TileImage" content="images/icons/icon-192x192.png">
     
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <!-- LESS -->
     <link rel="stylesheet" href="/Resources/LESS">
 

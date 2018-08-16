@@ -6,7 +6,8 @@
 <script src="/js/pwa.js"></script>
 <script src="/js/megamenu.js"></script>
 <script src="/js/product-tiles.js"></script>
-
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="/js/SlickManager.js"></script>			
 
 
 <!-- Cookie Consent -->
