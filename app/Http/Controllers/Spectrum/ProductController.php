@@ -10,7 +10,10 @@ class ProductController extends Controller
     {
         $Product = DB::table('products')->where('slug',$Slug)->first();
         $Product->CategoryInfo= DB::table('categories')->where('id',$Product->Category)->first();
-        $Product->CategoryInfo->SubCategory= DB::table('subcategories')->where('id',$Product->Category)->first();
+        $Product->CategoryInfo->SubCategory= DB::table('subcategories')->where('parentid',$Product->Category)->first();
+        $Product->CategoryInfo->SubCategory->SubSubCategory= DB::table('subsubcategories')->where('ParentID',$Product->Category)->first();
+        
+        
         //dd($Product);
         return $Product;
     }

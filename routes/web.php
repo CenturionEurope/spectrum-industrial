@@ -42,14 +42,14 @@
     });
 
 //Category Page
-    Route::get('category/{Category}', function($Category){
-        $Api = (object)array(
-            'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($Category),
-            'Slides' => app('App\Http\Controllers\Spectrum\DataController')->GetSlides(),
-            'Categories' => app('App\Http\Controllers\Spectrum\ProductController')->GetCategories()
-        );
-        return view('pages.category')->with('Api', $Api);
-    });
+Route::get('category/{Category}', function($Category){
+    $Api = (object)array(
+        'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($Category),
+        'Slides' => app('App\Http\Controllers\Spectrum\DataController')->GetSlides(),
+        'Categories' => app('App\Http\Controllers\Spectrum\ProductController')->GetCategories()
+    );
+    return view('pages.category')->with('Api', $Api);
+}); 
 
 
 // Templating Pages
@@ -115,6 +115,9 @@
         );
         return view('pages.materials')->with('Api', $Api);
     });
+
+
+
 
 // Custom Routes Below this Point 
 // LESS Controller 

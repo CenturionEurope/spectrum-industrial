@@ -12,3 +12,4 @@
 
 <!-- Cookie Consent -->
 @include('cookieConsent::index')
+
