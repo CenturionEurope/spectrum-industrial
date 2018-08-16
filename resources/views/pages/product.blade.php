@@ -23,7 +23,7 @@
             <div class="col-lg-9">
                 <div class="post">
                     <h1 class="categories">
-                        Category: <a href="/{{$Api->Product->CategoryInfo->slug}}">{{$Api->Product->CategoryInfo->name or ''}}</a> / {{$Api->Product->SubCategory}}
+                        <a href="/category/{{$Api->Product->CategoryInfo->slug}}">{{$Api->Product->CategoryInfo->name or ''}}</a> <i class="fas fa-caret-right"></i>  <a href="/category/{{$Api->Product->CategoryInfo->slug}}/{{$Api->Product->CategoryInfo->SubCategory->slug}}">{{$Api->Product->CategoryInfo->SubCategory->CategoryName}}</a> <i class="fas fa-caret-right"></i> {{$Api->Product->ProductName}}
                     </h1>
                     <hr>
                     <div class="row">

@@ -6,7 +6,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
@@ -18,27 +18,29 @@
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="#">Action 1</a>
-                <a class="dropdown-item" href="#">Action 2</a>
+                <a href="/material-information" class="dropdown-item">Material Guide</a>
+                @foreach($Api->Categories as $category)
+                    <a class="dropdown-item" href="category/{{$category->slug}}">{{$category->name}}</a>
+                @endforeach               
             </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Us </a>
+                <a class="nav-link" href="/">About Us </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Become a Distributor </a>
+                <a class="nav-link" href="/">Become a Distributor </a>
             </li>          
             <li class="nav-item">
-                <a class="nav-link" href="#">Find a Stockist </a>
+                <a class="nav-link" href="/">Find a Stockist </a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link" href="#">Spectrum Industrial UAE </a>
+                <a class="nav-link" href="/">Spectrum Industrial UAE </a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link" href="#">News </a>
+                <a class="nav-link" href="/news">News </a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link" href="#">Mobile Training Unit </a>
+                <a class="nav-link" href="/">Mobile Training Unit </a>
             </li>   
         </ul>      
         </div>
