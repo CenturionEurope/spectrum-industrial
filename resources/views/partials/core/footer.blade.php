@@ -15,7 +15,7 @@
                 </div>
                 <div class="twitter-username">
                     <a href="https://twitter.com/spectrum_ind" target="_blank" title="Spectrum Industrial Twitter" class="footerlink">
-                        <p>Follow us on twitter @Spectrum_Ind</p>qwe
+                        <p>Follow us on twitter @Spectrum_Ind</p>
                     </a>
                 </div>
                 </div>
