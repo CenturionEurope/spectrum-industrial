@@ -1,63 +1,46 @@
-<nav class="bg-dark-spectrum-mainnav">
+<nav class="navbar navbar-expand-lg bg-dark-spectrum-mainnav">
     <div class="container">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs|pills" id="navId">
-        <li class="nav-item">
-            <a href="/" class="nav-link active">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-            <div class="dropdown-menu mega">
-                <div class="container">
-                    <div class="mega">
-                        <div class="row">                        
-                            @foreach($Api->Categories as $category)
-                                <div class="col-lg-4">   
-                                    <div class="nav-item">
-                                        <a href="{{$category->slug}}"><img src="{{ Voyager::image( $category->CategoryImage ) }}" alt=""> {{$category->name}}</a>
-                                    </div>                                                        
-                                </div>
-                            @endforeach                      
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="menu-advert">
-                                    <img src="{{ Voyager::image(setting('site.nav_adert'))}}" width="100%" alt="setting('company.company_name')">
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>                    
-                </div>                
+        <a class="navbar-brand" href="#">Spectrum Industrial</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars white"></i></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
             </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="/data-sheets">Datasheets</a>            
-                <a class="dropdown-item" href="/infographics">Infographics</a>               
-                <a class="dropdown-item" href="/literature">Literature</a>
-            </div>
-        </li>  
-        <li class="nav-item"><a href="/" class="nav-link"> About Us </a></li>
-        <li class="nav-item"><a href="/" class="nav-link">Become a Distributor</a></li>
-        <li class="nav-item"><a href="/" class="nav-link">Find a Stockist</a></li>
-        <li class="nav-item"><a href="/" class="nav-link">Spectrum Industrial UAE</a></li>
-        <li class="nav-item"><a href="/news" class="nav-link">News</a></li>  
-        <li class="nav-item"><a href="/" class="nav-link">Catalogues</a></li>                        
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Become a Distributor </a>
+            </li>          
+            <li class="nav-item">
+                <a class="nav-link" href="#">Find a Stockist </a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="#">Spectrum Industrial UAE </a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="#">News </a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mobile Training Unit </a>
+            </li>   
+        </ul>      
+        </div>
     </div>
-    </div>
-</nav>
-<script>
-    $('#navId a').click(e => {
-        e.preventDefault();
-        $(this).tab('show');
-    });
-</script>
+  </nav>

@@ -2,19 +2,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <!-- Nav tabs -->
-                <ul class="nav light" id="navId">        
+                <!-- Social Media tabs -->
+                <ul class="nav light" id="navId">                    
                     <li class="nav-item">
-                        <a class="nav-link facebook" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-facebook-f"></i></a>            
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-twitter"></i></a>            
+                        <a class="nav-link" href="{{setting('social-media.twitter_url')}}" target="_blank" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-twitter"></i></a>            
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-youtube"></i></a>            
+                        <a class="nav-link" href="{{setting('social-media.youtube_url')}}" target="_blank" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-youtube"></i></a>            
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-google-plus-g"></i></a>            
+                        <a class="nav-link" href="{{setting('social-media.linkedin_url')}}"  target="_blank" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-linkedin"></i></a>            
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{setting('social-media.googleplus_url')}}"  target="_blank" role="button" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><i class="fab fa-google-plus-g"></i></a>            
                     </li>                
                 </ul>
             </div>
