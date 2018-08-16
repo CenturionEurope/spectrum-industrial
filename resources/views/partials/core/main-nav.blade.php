@@ -20,7 +20,7 @@
             <div class="dropdown-menu" aria-labelledby="dropdownId">
                 <a href="/material-information" class="dropdown-item">Material Guide</a>
                 @foreach($Api->Categories as $category)
-                    <a class="dropdown-item" href="category/{{$category->slug}}">{{$category->name}}</a>
+                    <a class="dropdown-item" href="/category/{{$category->slug}}">{{$category->name}}</a>
                 @endforeach               
             </div>
             </li>

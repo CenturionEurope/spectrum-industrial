@@ -13,7 +13,6 @@ class ProductController extends Controller
         $Product->CategoryInfo->SubCategory= DB::table('subcategories')->where('parentid',$Product->Category)->first();
         $Product->CategoryInfo->SubCategory->SubSubCategory= DB::table('subsubcategories')->where('ParentID',$Product->Category)->first();
         
-        
         //dd($Product);
         return $Product;
     }

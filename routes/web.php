@@ -70,7 +70,8 @@ Route::get('category/{Category}', function($Category){
             'Product' => app('App\Http\Controllers\Spectrum\ProductController')->GetProduct($slug),
             'Posts' => App\Post::all(),
             'Slides' => app('App\Http\Controllers\Spectrum\DataController')->GetSlides(),
-            'Categories' => app('App\Http\Controllers\Spectrum\ProductController')->GetCategories()     
+            'Categories' => app('App\Http\Controllers\Spectrum\ProductController')->GetCategories(),
+            
         );
         return view('pages.product')->with('Api', $Api);
     });
@@ -116,9 +117,7 @@ Route::get('category/{Category}', function($Category){
         return view('pages.materials')->with('Api', $Api);
     });
 
-
-
-
+    
 // Custom Routes Below this Point 
 // LESS Controller 
     Route::get('/Resources/LESS', ['uses' =>'Spectrum\LessController@Less']);
