@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "402c026717cf0edabcaf6f35c444bf31",
+    "content-hash": "43c363932518babe42ed1de5368be93c",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1741,7 +1741,7 @@
                 "storage"
             ],
             "time": "2018-05-07T08:44:23+00:00"
-        },
+        },        
         {
             "name": "monolog/monolog",
             "version": "1.23.0",
