@@ -31,4 +31,5 @@ class DataController extends Controller
     {
         return DB::table('materialinformations')->get();
     }
+    
 }

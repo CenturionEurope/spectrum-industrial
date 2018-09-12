@@ -60,6 +60,7 @@ Route::get('category/{Category}', function($Category){
             'Posts' => App\Post::all(),
             'Slides' => app('App\Http\Controllers\Spectrum\DataController')->GetSlides(),
             'Categories' => app('App\Http\Controllers\Spectrum\ProductController')->GetCategories()
+
         );    
         return view('pages.post', compact('post','Api'));
     });
